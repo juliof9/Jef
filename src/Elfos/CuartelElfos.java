@@ -4,7 +4,7 @@ import Aliens.jugarAliens;
 import ClasesAbstractas.AbstractFactory;
 import Humanos.jugarHumanos;
 
-public class FactoryElfos implements AbstractFactory{
+public class CuartelElfos implements AbstractFactory{
 
     @Override
     public jugarAliens getjugarAliens(String type) {
@@ -18,8 +18,14 @@ public class FactoryElfos implements AbstractFactory{
                 return new Arqueros();
             case "Mago":
                 return new Mago();
-            case "Duende":
-                return new Duende();
+            case "MinaOro":
+                return new MinaOro();
+            case "MinaElixir":
+                return new MinaElixir();
+            case "Elefantes":
+                return new Elefantes();
+            case "Avionetas":
+                return new Avionetas();
         }
         return null;
     }
