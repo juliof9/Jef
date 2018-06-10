@@ -31,6 +31,8 @@ public class CuartelHumanos implements AbstractFactory{
                 return new BancoOro();
             case "Elixir":
                 return new Elixir();
+            case "ElixirOscuro":
+                return new ElixirOscuro();
         }
         return null;
     }
