@@ -1,18 +1,18 @@
 package ClasesAbstractas;
 
-import Aliens.FactoryAliens;
-import Elfos.FactoryElfos;
-import Humanos.FactoryHumanos;
+import Aliens.CuartelAliens;
+import Elfos.CuartelElfos;
+import Humanos.CuartelHumanos;
 
 public class FactoryProducer {
     public static AbstractFactory getFactory(String type){
         switch(type){
             case "jugarEflos":
-                return new FactoryElfos();
+                return new CuartelElfos();
             case "jugarHumanos":
-                return new FactoryHumanos();
+                return new CuartelHumanos();
             case "jugarAliens":
-                return new FactoryAliens();
+                return new CuartelAliens();
         }
         return null;
     }
