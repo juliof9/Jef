@@ -20,6 +20,8 @@ public class CuartelAliens implements AbstractFactory{
                 return new MinaOro();
             case "MinaElixir":
                 return new MinaElixir();
+            case "ElixirOscuro":
+                return new ElixirOscuro();
         }
         return null;
     }
