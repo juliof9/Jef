@@ -107,13 +107,13 @@ public class Menu {
                                         case 2:
                                             AbstractFactory fact;
                                             fact = FactoryProducer.getFactory("jugarHumanos");
-                                            jugarHumanos Elixir = fact.getjugarHumanos("ELixir");
+                                            jugarHumanos Elixir = fact.getjugarHumanos("Elixir");
                                             Elixir.jugar();
                                             break;
                                         case 3:
                                             AbstractFactory fac;
                                             fac = FactoryProducer.getFactory("jugarHumanos");
-                                            jugarHumanos ElixirOscuro = fac.getjugarHumanos("Elixiroscuro");
+                                            jugarHumanos ElixirOscuro = fac.getjugarHumanos("ElixirOscuro");
                                             ElixirOscuro.jugar();
                                         case 4:
                                             System.out.println("Adios...");
@@ -308,7 +308,7 @@ public class Menu {
                                 Scanner leer5 = new Scanner(System.in);
                                 
                                 while(g != 3){
-                                    System.out.println("Que desea hacer jefe? \n");
+                                    System.out.println("Que desea hacer jefe? ");
                                     System.out.println("1. Entrenar un arquero");
                                     System.out.println("2. Entrenar un mago (Super soldado)");
                                     System.out.println("3. Salir \n");
@@ -317,9 +317,9 @@ public class Menu {
                                     
                                     switch(g){
                                         case 1:
-                                            AbstractFactory factory8;
-                                            factory8 = FactoryProducer.getFactory("jugarElfos");
-                                            jugarElfos Arqueros = factory8.getjugarElfos("Arquero");
+                                            AbstractFactory factory7;
+                                            factory7 = FactoryProducer.getFactory("jugarElfos");
+                                            jugarElfos Arqueros = factory7.getjugarElfos("Arquero");
                                             Arqueros.jugar();
                                             break;
                                         case 2:
@@ -365,11 +365,11 @@ public class Menu {
                                         case 3:
                                             AbstractFactory factory1;
                                             factory1 = FactoryProducer.getFactory("jugarElfos");
-                                            jugarElfos ElixirOscuro = factory1.getjugarElfos("MinaElixir");
+                                            jugarElfos ElixirOscuro = factory1.getjugarElfos("ElixirOscuro");
                                             ElixirOscuro.jugar();
                                             break;
                                         case 4:
-                                            System.out.println("SAliendo de este bloque");
+                                            System.out.println("Saliendo de este bloque");
                                             break;
                                         default:
                                             System.out.println("Eligio la opcion: "+ h +"Eliga una valida.");
@@ -382,7 +382,7 @@ public class Menu {
                                 
                                 while(i != 3){
                                     System.out.println("Que vehiculo de guerra desea contruir? \n");
-                                    System.out.println("1. Avioneta");
+                                    System.out.println("1. Avionetas");
                                     System.out.println("2. Elefantes");
                                     System.out.println("3. Salir \n");
                                     

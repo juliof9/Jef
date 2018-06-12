@@ -7,7 +7,7 @@ import Humanos.CuartelHumanos;
 public class FactoryProducer {
     public static AbstractFactory getFactory(String type){
         switch(type){
-            case "jugarEflos":
+            case "jugarElfos":
                 return new CuartelElfos();
             case "jugarHumanos":
                 return new CuartelHumanos();
