@@ -4,6 +4,7 @@ import Aliens.jugarAliens;
 import java.util.Scanner;
 import ClasesAbstractas.AbstractFactory;
 import ClasesAbstractas.FactoryProducer;
+import Elfos.jugarElfos;
 import Humanos.jugarHumanos;
 
 public class Menu {
@@ -26,11 +27,11 @@ public class Menu {
         Scanner teclado = new Scanner(System.in);
         
         while (op != 4){
-            System.out.println("Bienvenido al juego... Que raza deseas elegir?");
+            System.out.println("Bienvenido al juego... Que raza deseas elegir? \n");
             System.out.println("1. Humanos");
             System.out.println("2. Aliens");
             System.out.println("3. Elfos");
-            System.out.println("4. Salir");
+            System.out.println("4. Salir \n");
             
             op = teclado.nextInt();
             
@@ -40,11 +41,11 @@ public class Menu {
                     Scanner leer = new Scanner(System.in);
                     
                     while (valor != 4){
-                        System.out.println("En que desea gastar sus recursos de la raza humanos? ");
+                        System.out.println("En que desea gastar sus recursos de la raza humanos? \n");
                         System.out.println("1. Milicia");
                         System.out.println("2. Edificaciones");
                         System.out.println("3. Vehiculos de guerra");
-                        System.out.println("4. Salir");
+                        System.out.println("4. Salir \n");
                         
                         valor = leer.nextInt();
                         
@@ -54,10 +55,10 @@ public class Menu {
                                 Scanner lee = new Scanner(System.in);
                                 
                                 while (a != 3){
-                                    System.out.println("Que soldado desea entrenar?");
+                                    System.out.println("Que soldado desea entrenar? \n");
                                     System.out.println("1. Peloton");
                                     System.out.println("2. Super Soldado (Francotirador)");
-                                    System.out.println("3. Terminar Turno");
+                                    System.out.println("3. Salir \n");
                                     
                                     a = lee.nextInt();
                                     
@@ -88,11 +89,11 @@ public class Menu {
                                 int b = 5;
                                 Scanner lectura = new Scanner(System.in);
                                 while (b != 4){
-                                    System.out.println("Cual edificacion desea construir?");
+                                    System.out.println("Cual edificacion desea construir? \n");
                                     System.out.println("1. Mina o Banco de Oro");
                                     System.out.println("2. Mina de Elixir");
                                     System.out.println("3. Mina Elixir Oscuro");
-                                    System.out.println("4. Salir");
+                                    System.out.println("4. Salir \n");
                                     
                                     b = lectura.nextInt();
                                     
@@ -126,10 +127,10 @@ public class Menu {
                                 int c = 4;
                                 Scanner tecla = new Scanner(System.in);
                                 while (c != 3){
-                                    System.out.println("Que vehiculo desea contruir? ");
+                                    System.out.println("Que vehiculo desea contruir? \n");
                                     System.out.println("1. Avion");
                                     System.out.println("2. Tanque");
-                                    System.out.println("3. Salir");
+                                    System.out.println("3. Salir \n");
                                     
                                     c = tecla.nextInt();
                                     
@@ -155,7 +156,7 @@ public class Menu {
                                 }
                                 break;
                             case 4:
-                                System.out.println("Fin del programa");
+                                System.out.println("Saliendo de este bloque");
                                 break;
                         }
                     }
@@ -169,7 +170,7 @@ public class Menu {
                         System.out.println("1. Milicias");
                         System.out.println("2. Edificaciones");
                         System.out.println("3. Vehiculos de guerra");
-                        System.out.println("4. Salir");
+                        System.out.println("4. Salir \n");
                         
                         valor1 = teclas.nextInt();
                         
@@ -182,7 +183,7 @@ public class Menu {
                                     System.out.println("Sus milicias son las siguientes: \n");
                                     System.out.println("1. Aliens");
                                     System.out.println("2. Depredadores (Super soldado)");
-                                    System.out.println("3. Salir");
+                                    System.out.println("3. Salir \n");
                                     
                                     d = leer1.nextInt();
                                     
@@ -212,10 +213,11 @@ public class Menu {
                                 Scanner leer3 = new Scanner(System.in);
                                 
                                 while(e != 4){
+                                    System.out.println("Que desea comenzar a contruir? \n");
                                     System.out.println("1. Mina de Oro");
                                     System.out.println("2. Mina de Elixir");
                                     System.out.println("3. Mina de Elixir Oscuro");
-                                    System.out.println("4. Salir");
+                                    System.out.println("4. Salir \n");
                                     
                                     e = leer3.nextInt();
                                     
@@ -254,7 +256,7 @@ public class Menu {
                                     System.out.println("Que behiculos de guerra desea construir? \n");
                                     System.out.println("1. Omnis");
                                     System.out.println("2. Naves");
-                                    System.out.println("3. Salir de este bloque");
+                                    System.out.println("3. Salir \n");
                                     
                                     f = leer6.nextInt();
                                     
@@ -292,19 +294,131 @@ public class Menu {
                     Scanner leer4 = new Scanner(System.in);
                     
                     while( valor2 != 4){
-                        System.out.println("Se escogio la raza Elfos");
+                        System.out.println("Se escogio la raza Elfos \n");
                         System.out.println("1. Milicias");
                         System.out.println("2. Edificaciones");
                         System.out.println("3. Vehiculos de guerra");
-                        System.out.println("4. Salir");
+                        System.out.println("4. Salir \n");
                         
                         valor2 = leer4.nextInt();
                         
                         switch(valor2){
                             case 1:
-                                System.out.println("");
+                                int g = 5;
+                                Scanner leer5 = new Scanner(System.in);
+                                
+                                while(g != 3){
+                                    System.out.println("Que desea hacer jefe? \n");
+                                    System.out.println("1. Entrenar un arquero");
+                                    System.out.println("2. Entrenar un mago (Super soldado)");
+                                    System.out.println("3. Salir \n");
+                                    
+                                    g = leer5.nextInt();
+                                    
+                                    switch(g){
+                                        case 1:
+                                            AbstractFactory factory8;
+                                            factory8 = FactoryProducer.getFactory("jugarElfos");
+                                            jugarElfos Arqueros = factory8.getjugarElfos("Arquero");
+                                            Arqueros.jugar();
+                                            break;
+                                        case 2:
+                                            AbstractFactory factory9;
+                                            factory9 = FactoryProducer.getFactory("jugarElfos");
+                                            jugarElfos Mago = factory9.getjugarElfos("Mago");
+                                            Mago.jugar();
+                                            break;
+                                        case 3:
+                                            System.out.println("Saliendo de este bloque...");
+                                            break;
+                                        default:
+                                            System.out.println("Escogio: " + g + "Eliga una opcion valida.");
+                                    }
+                                }
+                                break;
+                            case 2:
+                                int h = 5;
+                                Scanner leer7 = new Scanner(System.in);
+                                
+                                while (h != 4){
+                                    System.out.println("Usted eligio crear una edificacion: \n");
+                                    System.out.println("1. Mina de Oro");
+                                    System.out.println("2. Mina de Elixir");
+                                    System.out.println("3. Mina de Elixir Oscuro");
+                                    System.out.println("4. Salir \n");
+                                    
+                                    h = leer7.nextInt();
+                                    
+                                    switch(h){
+                                        case 1:
+                                            AbstractFactory factory0;
+                                            factory0 = FactoryProducer.getFactory("jugarElfos");
+                                            jugarElfos MinaOro = factory0.getjugarElfos("MinaOro");
+                                            MinaOro.jugar();
+                                            break;
+                                        case 2:
+                                            AbstractFactory factory;
+                                            factory = FactoryProducer.getFactory("jugarElfos");
+                                            jugarElfos MinaElixir = factory.getjugarElfos("MinaElixir");
+                                            MinaElixir.jugar();
+                                            break;
+                                        case 3:
+                                            AbstractFactory factory1;
+                                            factory1 = FactoryProducer.getFactory("jugarElfos");
+                                            jugarElfos ElixirOscuro = factory1.getjugarElfos("MinaElixir");
+                                            ElixirOscuro.jugar();
+                                            break;
+                                        case 4:
+                                            System.out.println("SAliendo de este bloque");
+                                            break;
+                                        default:
+                                            System.out.println("Eligio la opcion: "+ h +"Eliga una valida.");
+                                    }
+                                }
+                                break;
+                            case 3:
+                                int i = 4;
+                                Scanner leer0 = new Scanner(System.in);
+                                
+                                while(i != 3){
+                                    System.out.println("Que vehiculo de guerra desea contruir? \n");
+                                    System.out.println("1. Avioneta");
+                                    System.out.println("2. Elefantes");
+                                    System.out.println("3. Salir \n");
+                                    
+                                    i = leer0.nextInt();
+                                    
+                                    switch(i){
+                                        case 1:
+                                            AbstractFactory factory;
+                                            factory = FactoryProducer.getFactory("jugarElfos");
+                                            jugarElfos Avionetas = factory.getjugarElfos("Avionetas");
+                                            Avionetas.jugar();
+                                            break;
+                                        case 2:
+                                            AbstractFactory factor;
+                                            factor = FactoryProducer.getFactory("jugarElfos");
+                                            jugarElfos Elefantes = factor.getjugarElfos("Elefantes");
+                                            Elefantes.jugar();
+                                            break;
+                                        case 3:
+                                            System.out.println("Saliendo de este bloque");
+                                            break;
+                                        default:
+                                            System.out.println("Ingreso: "+ i +"Ingrese una opcion valida.");
+                                            break;
+                                    }
+                                }
+                                break;
+                            case 4:
+                                System.out.println("Saliendo de este bloque.");
+                                break;
                         }
                     }
+                    break;
+                case 4:
+                    System.out.println("Adios saliendo del sistema.");
+                    break;
             }
         }
     }
