@@ -26,6 +26,8 @@ public class CuartelElfos implements AbstractFactory{
                 return new Elefantes();
             case "Avionetas":
                 return new Avionetas();
+            case "ElixirOscuro":
+                return new ElixirOscuro();
         }
         return null;
     }
