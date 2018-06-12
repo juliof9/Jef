@@ -1,13 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+import Menu.Menu;
+import javax.swing.JOptionPane;
 
-/**
- *
- * @author PC
- */
 public class Main {
-    
+    public static void main(String[] args){
+        String Contraseña;
+        
+        do{
+            Contraseña = JOptionPane.showInputDialog("Hola, para comenzar el juego ingrese la contraseña: ");
+            if (Contraseña.equals("juguemos")){
+                JOptionPane.showMessageDialog(null, "Se inicio correctamente");
+            }
+            else{
+                JOptionPane.showMessageDialog(null, "La constraseña es incorrecta, por favor intentalo de nuevo.");
+            }
+        }while(Contraseña.equals("juguemos") == false);
+        
+        Menu menu = Menu.getInstance();
+        
+        menu.opciones();
+    }
 }
