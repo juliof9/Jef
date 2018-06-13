@@ -20,7 +20,7 @@ public class Main {
         Scanner leer = new Scanner(System.in);
         System.out.println("Ingrese su nombre jugardor1: ");
         jugador1 = leer.nextLine();
-        System.out.println(jugador1 + " Words");
+        System.out.println(jugador1 + " World");
         
         Scanner leer2 = new Scanner(System.in);
         System.out.println("Ingrese su nombre jugador2: ");
@@ -30,17 +30,17 @@ public class Main {
             Math.random();
             double numeroRandom = Math.random();
             if (numeroRandom < 0.5){
-                System.out.println("Jugador1" + jugador1 + "empieza");
+                System.out.println("Jugador1: " + jugador1 + " empieza");
                 Menu menu = Menu.getInstance();
         
                 menu.opciones();
             }
             else{
-                System.out.println("Jugador2: " + jugador2 + "empieza");
+                System.out.println("Jugador2: " + jugador2 + " empieza");
                 Menu menu = Menu.getInstance();
         
                 menu.opciones();
             }    
-        }while(juego != 0); 
+        }while(juego == 1); 
     }
 }
