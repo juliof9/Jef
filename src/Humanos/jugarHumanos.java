@@ -1,5 +1,7 @@
 package Humanos;
 
 public interface jugarHumanos {
-    void jugar();
+    public void daño();
+    public void atacar();
+    public void defender();
 }
