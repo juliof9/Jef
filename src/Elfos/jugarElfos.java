@@ -2,5 +2,7 @@
 package Elfos;
 
 public interface jugarElfos {
-    void jugar();
+    public void daño();
+    public void atacar();
+    public void defender();
 }

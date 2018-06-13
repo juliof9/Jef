@@ -1,5 +1,7 @@
 package Aliens;
 
 public interface jugarAliens {
-    void jugar();
+    public void daño();
+    public void atacar();
+    public void defender();
 }
