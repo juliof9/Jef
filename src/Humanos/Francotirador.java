@@ -3,7 +3,7 @@ package Humanos;
 import java.util.Random;
 
 public class Francotirador implements jugarHumanos{
-    private int vida4, fuerza4, fisico4;
+    private int vida4, fuerza4;
     private Random rand = new Random(System.nanoTime());
 
     public int getVida4() {
@@ -21,15 +21,6 @@ public class Francotirador implements jugarHumanos{
     public void setFuerza4(int fuerza4) {
         this.fuerza4 = fuerza4;
     }
-
-    public int getFisico4() {
-        return fisico4;
-    }
-
-    public void setFisico4(int fisico4) {
-        this.fisico4 = fisico4;
-    }
-    
     
     @Override
     public void daño(){

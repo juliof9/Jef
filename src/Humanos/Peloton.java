@@ -3,7 +3,7 @@ package Humanos;
 import java.util.Random;
 
 public class Peloton implements jugarHumanos{
-    private int vida2, fuerza2, fisico2;
+    private int vida2, fuerza2;
     private Random rand = new Random(System.nanoTime());
 
     public int getVida2() {
@@ -20,14 +20,6 @@ public class Peloton implements jugarHumanos{
 
     public void setFuerza2(int fuerza2) {
         this.fuerza2 = fuerza2;
-    }
-
-    public int getFisico2() {
-        return fisico2;
-    }
-
-    public void setFisico2(int fisico2) {
-        this.fisico2 = fisico2;
     }
     
     @Override

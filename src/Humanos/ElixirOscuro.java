@@ -3,7 +3,7 @@ package Humanos;
 import java.util.Random;
 
 public class ElixirOscuro implements jugarHumanos{
-    private int vida5, fuerza5, fisico5;
+    private int vida5, recursos2;
     private Random rand = new Random(System.nanoTime());
 
     public int getVida5() {
@@ -14,20 +14,12 @@ public class ElixirOscuro implements jugarHumanos{
         this.vida5 = vida5;
     }
 
-    public int getFuerza5() {
-        return fuerza5;
+    public int getRecursos2() {
+        return recursos2;
     }
 
-    public void setFuerza5(int fuerza5) {
-        this.fuerza5 = fuerza5;
-    }
-
-    public int getFisico5() {
-        return fisico5;
-    }
-
-    public void setFisico5(int fisico5) {
-        this.fisico5 = fisico5;
+    public void setRecursos2(int recursos2) {
+        this.recursos2 = recursos2;
     }
     
     @Override

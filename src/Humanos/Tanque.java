@@ -3,7 +3,7 @@ package Humanos;
 import java.util.Random;
 
 public class Tanque implements jugarHumanos{
-    private int vida, fuerza, fisico;
+    private int vida, fuerza;
     private Random rand = new Random(System.nanoTime());
 
     public int getVida() {
@@ -20,14 +20,6 @@ public class Tanque implements jugarHumanos{
 
     public void setFuerza(int fuerza) {
         this.fuerza = fuerza;
-    }
-
-    public int getFisico() {
-        return fisico;
-    }
-
-    public void setFisico(int fisico) {
-        this.fisico = fisico;
     }
     
     @Override
