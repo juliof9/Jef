@@ -41,7 +41,7 @@ public class Menu {
                     Scanner leer = new Scanner(System.in);
                     
                     while (valor != 4){
-                        System.out.println("En que desea gastar sus recursos de la raza humanos? \n");
+                        System.out.println("En que desea gastar sus recursos de la raza humanos? ");
                         System.out.println("1. Milicia");
                         System.out.println("2. Edificaciones");
                         System.out.println("3. Vehiculos de guerra");
@@ -166,7 +166,7 @@ public class Menu {
                     Scanner teclas = new Scanner(System.in);
                     
                     while (valor1 != 4){
-                        System.out.println("Se escogio la raza Aliens, que desea hacer? \n");
+                        System.out.println("Se escogio la raza Aliens, que desea hacer? ");
                         System.out.println("1. Milicias");
                         System.out.println("2. Edificaciones");
                         System.out.println("3. Vehiculos de guerra");
@@ -253,7 +253,7 @@ public class Menu {
                                 Scanner leer6 = new Scanner(System.in);
                                 
                                 while( f != 3){
-                                    System.out.println("Que behiculos de guerra desea construir? \n");
+                                    System.out.println("Que vehiculos de guerra desea construir? \n");
                                     System.out.println("1. Omnis");
                                     System.out.println("2. Naves");
                                     System.out.println("3. Salir \n");
@@ -294,7 +294,7 @@ public class Menu {
                     Scanner leer4 = new Scanner(System.in);
                     
                     while( valor2 != 4){
-                        System.out.println("Se escogio la raza Elfos \n");
+                        System.out.println("Se escogio la raza Elfos ");
                         System.out.println("1. Milicias");
                         System.out.println("2. Edificaciones");
                         System.out.println("3. Vehiculos de guerra");
@@ -341,7 +341,7 @@ public class Menu {
                                 Scanner leer7 = new Scanner(System.in);
                                 
                                 while (h != 4){
-                                    System.out.println("Usted eligio crear una edificacion: \n");
+                                    System.out.println("Usted eligio crear una edificacion: ");
                                     System.out.println("1. Mina de Oro");
                                     System.out.println("2. Mina de Elixir");
                                     System.out.println("3. Mina de Elixir Oscuro");
@@ -405,7 +405,7 @@ public class Menu {
                                             System.out.println("Saliendo de este bloque");
                                             break;
                                         default:
-                                            System.out.println("Ingreso: "+ i +"Ingrese una opcion valida.");
+                                            System.out.println("Ingreso: "+ i +" Ingrese una opcion valida.");
                                             break;
                                     }
                                 }
