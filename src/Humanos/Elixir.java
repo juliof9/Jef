@@ -1,17 +1,13 @@
 package Humanos;
 
-import java.util.Random;
-
 public class Elixir implements jugarHumanos{
-    private int vida6, recursos1;
-    private Random rand = new Random(System.nanoTime());
-
-    public int getVida6() {
-        return vida6;
-    }
-
-    public void setVida6(int vida6) {
-        this.vida6 = vida6;
+    public static int vida6 = 400;
+    private int recursos1;
+    
+    public Elixir(){}
+    
+    public Elixir(int recursos1){
+        this.recursos1 = recursos1;
     }
 
     public int getRecursos1() {
@@ -21,19 +17,14 @@ public class Elixir implements jugarHumanos{
     public void setRecursos1(int recursos1) {
         this.recursos1 = recursos1;
     }
-    
-    @Override
-    public void daño(){
-        System.out.println("El elixir o la mina de elixir se creara en 2 turnos");
-    }
 
     @Override
-    public void atacar() {
-        
-    }
+    public void atacar() {}
 
     @Override
-    public void defender() {
-        
+    public void recolectar1() {
+        Elixir elixir = new Elixir();
+        elixir.setRecursos1(5000);
+        System.out.println("Tienes: "+ elixir.getRecursos1() + " de elixir");
     }
 }

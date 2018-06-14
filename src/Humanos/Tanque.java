@@ -21,11 +21,6 @@ public class Tanque implements jugarHumanos{
     public void setFuerza(int fuerza) {
         this.fuerza = fuerza;
     }
-    
-    @Override
-    public void daño(){
-        System.out.println("Se creo el tanque");
-    }
 
     @Override
     public void atacar() {
@@ -33,7 +28,7 @@ public class Tanque implements jugarHumanos{
     }
 
     @Override
-    public void defender() {
+    public void recolectar1() {
         
     }
 }

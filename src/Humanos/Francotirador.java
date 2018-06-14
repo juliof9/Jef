@@ -21,11 +21,6 @@ public class Francotirador implements jugarHumanos{
     public void setFuerza4(int fuerza4) {
         this.fuerza4 = fuerza4;
     }
-    
-    @Override
-    public void daño(){
-        System.out.println("Se creo el Francotirador");
-    }
 
     @Override
     public void atacar() {
@@ -33,7 +28,7 @@ public class Francotirador implements jugarHumanos{
     }
 
     @Override
-    public void defender() {
+    public void recolectar1() {
         
     }
 }

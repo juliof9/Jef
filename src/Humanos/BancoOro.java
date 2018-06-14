@@ -1,17 +1,13 @@
 package Humanos;
 
-import java.util.Random;
-
 public class BancoOro implements jugarHumanos{
-    private int vida1, recursos;
-    private Random rand = new Random(System.nanoTime());
-
-    public int getVida1() {
-        return vida1;
-    }
-
-    public void setVida1(int vida1) {
-        this.vida1 = vida1;
+    public static int vida1 = 300;
+    private int recursos;
+    
+    public BancoOro(){}
+    
+    public BancoOro(int recursos){
+        this.recursos = recursos;
     }
 
     public int getRecursos() {
@@ -21,19 +17,14 @@ public class BancoOro implements jugarHumanos{
     public void setRecursos(int recursos) {
         this.recursos = recursos;
     }
-    
-    @Override
-    public void daño(){
-        System.out.println("El banco taradara 3 turnos en crearse");
-    }
 
     @Override
-    public void atacar() {
-        
-    }
+    public void atacar() {}
 
     @Override
-    public void defender() {
-        
+    public void recolectar1() {
+        BancoOro bancooro = new BancoOro();
+        bancooro.setRecursos(10000);
+        System.out.println("Tienes: "+ bancooro.getRecursos() + " de Oro.");
     }
 }
