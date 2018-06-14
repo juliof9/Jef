@@ -1,3 +1,5 @@
+import static Elfos.CentroElfos.life;
+import static Humanos.CentroHumanos.life1;
 import Menu.Menu;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -5,7 +7,6 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args){
         String Contraseña, jugador1, jugador2;
-        int juego = 1;
         
         do{
             Contraseña = JOptionPane.showInputDialog("Hola, para comenzar el juego ingrese la contraseña: ");
@@ -25,6 +26,7 @@ public class Main {
         Scanner leer2 = new Scanner(System.in);
         System.out.println("Ingrese su nombre jugador2: ");
         jugador2 = leer2.nextLine();
+        System.out.println(jugador2 + " Wordl");
         
         do{
             Math.random();
@@ -41,6 +43,6 @@ public class Main {
         
                 menu.opciones();
             }    
-        }while(juego == 1); 
+        }while(life >= 0 && life1 >= 0); 
     }
 }

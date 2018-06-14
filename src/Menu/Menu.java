@@ -68,14 +68,14 @@ public class Menu {
                                             
                                             factory = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Peloton = factory.getjugarHumanos("Peloton");
-                                            Peloton.daño();
+                                            Peloton.atacar();
                                             break;
                                         case 2:
                                             AbstractFactory factor;
                                             
                                             factor = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Francotirador = factor.getjugarHumanos("Francotirador");
-                                            Francotirador.daño();
+                                            Francotirador.atacar();
                                             break;
                                         case 3:
                                             System.out.println("Adios, saliendo del sistema");
@@ -102,19 +102,19 @@ public class Menu {
                                             AbstractFactory facto;
                                             facto = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos BancoOro = facto.getjugarHumanos("BancoOro");
-                                            BancoOro.daño();
+                                            BancoOro.recolectar1();
                                             break;
                                         case 2:
                                             AbstractFactory fact;
                                             fact = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Elixir = fact.getjugarHumanos("Elixir");
-                                            Elixir.daño();
+                                            Elixir.recolectar1();
                                             break;
                                         case 3:
                                             AbstractFactory fac;
                                             fac = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos ElixirOscuro = fac.getjugarHumanos("ElixirOscuro");
-                                            ElixirOscuro.daño();
+                                            ElixirOscuro.recolectar1();
                                         case 4:
                                             System.out.println("Adios...");
                                             break;
@@ -139,13 +139,13 @@ public class Menu {
                                             AbstractFactory fa;
                                             fa = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Avion = fa.getjugarHumanos("Avion");
-                                            Avion.daño();
+                                            Avion.atacar();
                                             break;
                                         case 2:
                                             AbstractFactory f;
                                             f = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Tanque = f.getjugarHumanos("Tanque");
-                                            Tanque.daño();
+                                            Tanque.atacar();
                                             break;
                                         case 3:
                                             System.out.println("Adios...");
@@ -320,13 +320,13 @@ public class Menu {
                                             AbstractFactory factory7;
                                             factory7 = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos Arqueros = factory7.getjugarElfos("Arquero");
-                                            Arqueros.daño();
+                                            Arqueros.atacar();
                                             break;
                                         case 2:
                                             AbstractFactory factory9;
                                             factory9 = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos Mago = factory9.getjugarElfos("Mago");
-                                            Mago.daño();
+                                            Mago.atacar();
                                             break;
                                         case 3:
                                             System.out.println("Saliendo de este bloque...");
@@ -354,19 +354,19 @@ public class Menu {
                                             AbstractFactory factory0;
                                             factory0 = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos MinaOro = factory0.getjugarElfos("MinaOro");
-                                            MinaOro.daño();
+                                            MinaOro.recolectar();
                                             break;
                                         case 2:
                                             AbstractFactory factory;
                                             factory = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos MinaElixir = factory.getjugarElfos("MinaElixir");
-                                            MinaElixir.daño();
+                                            MinaElixir.recolectar();
                                             break;
                                         case 3:
                                             AbstractFactory factory1;
                                             factory1 = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos ElixirOscuro = factory1.getjugarElfos("ElixirOscuro");
-                                            ElixirOscuro.daño();
+                                            ElixirOscuro.recolectar();
                                             break;
                                         case 4:
                                             System.out.println("Saliendo de este bloque");
@@ -393,13 +393,13 @@ public class Menu {
                                             AbstractFactory factory;
                                             factory = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos Avionetas = factory.getjugarElfos("Avionetas");
-                                            Avionetas.daño();
+                                            Avionetas.atacar();
                                             break;
                                         case 2:
                                             AbstractFactory factor;
                                             factor = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos Elefantes = factor.getjugarElfos("Elefantes");
-                                            Elefantes.daño();
+                                            Elefantes.atacar();
                                             break;
                                         case 3:
                                             System.out.println("Saliendo de este bloque");
