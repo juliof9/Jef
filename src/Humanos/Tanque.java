@@ -1,17 +1,13 @@
 package Humanos;
 
-import java.util.Random;
-
 public class Tanque implements jugarHumanos{
-    private int vida, fuerza;
-    private Random rand = new Random(System.nanoTime());
-
-    public int getVida() {
-        return vida;
-    }
-
-    public void setVida(int vida) {
-        this.vida = vida;
+    public static int vida = 600;
+    private int fuerza;
+    
+    public Tanque(){}
+    
+    public Tanque(int fuerza){
+        this.fuerza = fuerza;
     }
 
     public int getFuerza() {
