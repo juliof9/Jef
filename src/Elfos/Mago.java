@@ -1,6 +1,8 @@
 
 package Elfos;
 
+import java.util.Scanner;
+
 public class Mago implements jugarElfos{
     private int vida8, fuerza8;
     
@@ -29,7 +31,29 @@ public class Mago implements jugarElfos{
 
     @Override
     public void atacar() {
+        Mago mago = new Mago();
+        mago.setVida8(500);
+        mago.setFuerza8(200);
+        int a = 3;
+        Scanner lee2 = new Scanner(System.in);
         
+        System.out.println("Se entreno el Mago, desea atacar? ");
+        while (a != 2 ){
+            System.out.println("1. Si");
+            System.out.println("2. No");
+            
+            a = lee2.nextInt();
+            
+            switch(a){
+                case 1:
+                    System.out.println("Mago hizo un daño de: " + mago.fuerza8 + " al centro de mando Humanos: ");
+                    System.out.println("Vida del Mago: " + mago.vida8);
+                    break;
+                case 2:
+                    System.out.println("Saliendo de este bloque...");
+                    break;
+            }
+        }
     }
 
     @Override

@@ -30,12 +30,14 @@ public class Arqueros implements jugarElfos{
 
     @Override
     public void atacar() {
-        
+        Arqueros arquero = new Arqueros();
+        arquero.setVida01(200);
+        arquero.setataque(100);
         int a = 3;
         Scanner leer = new Scanner(System.in);
         
         System.out.println("Se entreno el Arquero, desea atacar? ");
-        while (a != 2){
+        while (a != 2 ){
             System.out.println("1. Si");
             System.out.println("2. No");
             
@@ -43,11 +45,8 @@ public class Arqueros implements jugarElfos{
             
             switch(a){
                 case 1:
-                    Arqueros arquero = new Arqueros();
-                    arquero.setVida01(200);
-                    arquero.setataque(100);
-                    System.out.println("Arquero hizo un daño de: " + ataque + "al centro de mando Aliens: ");
-                    System.out.println("Vida del arquero: " + vida01);
+                    System.out.println("Arquero hizo un daño de: " + arquero.ataque + " al centro de mando Humanos: ");
+                    System.out.println("Vida del arquero: " + arquero.vida01);
                     break;
                 case 2:
                     System.out.println("Saliendo de este bloque...");

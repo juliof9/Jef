@@ -28,7 +28,6 @@ public class MinaOro implements jugarElfos{
 
     @Override
     public void atacar() {
-        
         //No puede atacar porque es una mina
     }
 

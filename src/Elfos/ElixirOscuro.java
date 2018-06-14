@@ -30,7 +30,6 @@ public class ElixirOscuro implements jugarElfos{
     @Override
     public void atacar() {
         //No puede atacar porque es un recolector
-        
     }
 
     @Override

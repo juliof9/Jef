@@ -1,6 +1,8 @@
 
 package Elfos;
 
+import java.util.Scanner;
+
 public class Avionetas implements jugarElfos{
     private int vida11, fuerza11;
     
@@ -29,7 +31,29 @@ public class Avionetas implements jugarElfos{
 
     @Override
     public void atacar() {
+        Avionetas avioneta = new Avionetas();
+        avioneta.setVida11(300);
+        avioneta.setFuerza11(200);
+        int a = 3;
+        Scanner lee = new Scanner(System.in);
         
+        System.out.println("Se entreno la Avioneta, desea atacar? ");
+        while (a != 2 ){
+            System.out.println("1. Si");
+            System.out.println("2. No");
+            
+            a = lee.nextInt();
+            
+            switch(a){
+                case 1:
+                    System.out.println("Avioneta hizo un daño de: " + avioneta.fuerza11 + " al centro de mando Humanos: ");
+                    System.out.println("Vida del Avioneta: " + avioneta.vida11);
+                    break;
+                case 2:
+                    System.out.println("Saliendo de este bloque...");
+                    break;
+            }
+        }
     }
 
     @Override
