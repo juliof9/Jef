@@ -1,23 +1,13 @@
 package Elfos;
 
-import java.util.Random;
-
 public class MinaElixir implements jugarElfos{
-    private int vida9, recolector0;
+    public static int vida09 = 500;
+    private int recolector0;
     
     public MinaElixir(){}
     
-    public MinaElixir(int vida9, int recolector0){
+    public MinaElixir(int recolector0){
         this.recolector0 = recolector0;
-        this.vida9 = vida9;
-    }
-
-    public int getVida9() {
-        return vida9;
-    }
-
-    public void setVida9(int vida9) {
-        this.vida9 = vida9;
     }
 
     public int getRecolector0() {

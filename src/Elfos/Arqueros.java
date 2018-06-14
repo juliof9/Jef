@@ -3,12 +3,12 @@ package Elfos;
 import java.util.Scanner;
 
 public class Arqueros implements jugarElfos{
-    private int vida01, ataque;
+    public static int vida01 = 400;
+    private int ataque;
     
     public Arqueros(){}
     
-    public Arqueros(int vida01, int fuerza01){
-        this.vida01 = vida01;
+    public Arqueros(int fuerza01){
         this.ataque = fuerza01;
     }
 
@@ -31,7 +31,6 @@ public class Arqueros implements jugarElfos{
     @Override
     public void atacar() {
         Arqueros arquero = new Arqueros();
-        arquero.setVida01(200);
         arquero.setataque(100);
         int a = 3;
         Scanner leer = new Scanner(System.in);
@@ -46,7 +45,6 @@ public class Arqueros implements jugarElfos{
             switch(a){
                 case 1:
                     System.out.println("Arquero hizo un daño de: " + arquero.ataque + " al centro de mando Humanos: ");
-                    System.out.println("Vida del arquero: " + arquero.vida01);
                     break;
                 case 2:
                     System.out.println("Saliendo de este bloque...");

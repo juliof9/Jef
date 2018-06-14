@@ -1,26 +1,19 @@
 
 package Elfos;
 
+import static Humanos.CentroHumanos.life1;
 import java.util.Scanner;
 
 public class Mago implements jugarElfos{
-    private int vida8, fuerza8;
+    public static int vida8 = 600;
+    private int fuerza8;
     
     public Mago(){}
     
-    public Mago(int vida8, int fuerza8){
+    public Mago(int fuerza8){
         this.fuerza8 = fuerza8;
-        this.vida8 = vida8;
     }
-
-    public int getVida8() {
-        return vida8;
-    }
-
-    public void setVida8(int vida8) {
-        this.vida8 = vida8;
-    }
-
+    
     public int getFuerza8() {
         return fuerza8;
     }
@@ -32,7 +25,6 @@ public class Mago implements jugarElfos{
     @Override
     public void atacar() {
         Mago mago = new Mago();
-        mago.setVida8(500);
         mago.setFuerza8(200);
         int a = 3;
         Scanner lee2 = new Scanner(System.in);
@@ -46,8 +38,7 @@ public class Mago implements jugarElfos{
             
             switch(a){
                 case 1:
-                    System.out.println("Mago hizo un daño de: " + mago.fuerza8 + " al centro de mando Humanos: ");
-                    System.out.println("Vida del Mago: " + mago.vida8);
+                    System.out.println("Mago hizo un daño de: " + mago.fuerza8 + " al centro de mando Humanos: "+ (life1-mago.fuerza8));
                     break;
                 case 2:
                     System.out.println("Saliendo de este bloque...");

@@ -1,21 +1,13 @@
 package Elfos;
 
 public class MinaOro implements jugarElfos{
-    private int vida0, recolector;
+    public static int vida0 = 400;
+    private int recolector;
     
     public MinaOro(){}
     
-    public MinaOro(int vida0, int recolector){
-        this.vida0 = vida0;
+    public MinaOro(int recolector){
         this.recolector = recolector;
-    }
-
-    public int getVida() {
-        return vida0;
-    }
-
-    public void setVida(int vida) {
-        this.vida0 = vida;
     }
 
     public int getRecolector() {
