@@ -1,11 +1,15 @@
 
 package Elfos;
 
-import java.util.Random;
-
 public class ElixirOscuro implements jugarElfos{
     private int vida9, recolector1;
-    private Random rand = new Random(System.nanoTime());
+    
+    public ElixirOscuro(){}
+    
+    public ElixirOscuro(int vida9, int recolector1){
+        this.vida9 = vida9;
+        this.recolector1 = recolector1;
+    }
 
     public int getVida9() {
         return vida9;
@@ -22,19 +26,15 @@ public class ElixirOscuro implements jugarElfos{
     public void setrecolector1(int recolector1) {
         this.recolector1 = recolector1;
     }
-    
-    @Override
-    public void daño(){
-        System.out.println("Se contruyo la mina de Elixir Oscuro");
-    }
 
     @Override
     public void atacar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //No puede atacar porque es un recolector
+        
     }
 
     @Override
-    public void defender() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void recolectar() {
+        
     }
 }

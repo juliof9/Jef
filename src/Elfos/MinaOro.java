@@ -1,10 +1,14 @@
 package Elfos;
 
-import java.util.Random;
-
 public class MinaOro implements jugarElfos{
     private int vida0, recolector;
-    private Random rand = new Random(System.nanoTime());
+    
+    public MinaOro(){}
+    
+    public MinaOro(int vida0, int recolector){
+        this.vida0 = vida0;
+        this.recolector = recolector;
+    }
 
     public int getVida() {
         return vida0;
@@ -21,19 +25,15 @@ public class MinaOro implements jugarElfos{
     public void setRecolector(int recolector) {
         this.recolector = recolector;
     }
-    
-    @Override
-    public void daño(){
-        
-    }
 
     @Override
     public void atacar() {
         
+        //No puede atacar porque es una mina
     }
 
     @Override
-    public void defender() {
+    public void recolectar() {
         
     }
 }

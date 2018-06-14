@@ -1,10 +1,14 @@
 package Elfos;
 
-import java.util.Random;
-
 public class Elefantes implements jugarElfos{
     private int vida10, fuerza10;
-    private Random rand = new Random(System.nanoTime());
+    
+    public Elefantes(){}
+    
+    public Elefantes(int vida10, int fuerza10){
+        this.fuerza10 = fuerza10;
+        this.vida10 = vida10;
+    }
 
     public int getVida10() {
         return vida10;
@@ -21,19 +25,13 @@ public class Elefantes implements jugarElfos{
     public void setFuerza10(int fuerza10) {
         this.fuerza10 = fuerza10;
     }
-    
-    @Override
-    public void daño(){
-        System.out.println("Tomara un turno crear su edificacion Elefantes");
-    }
 
     @Override
     public void atacar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Se entreno el Eleante, desea atacar? ");
+        
     }
 
     @Override
-    public void defender() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void recolectar() {}
 }

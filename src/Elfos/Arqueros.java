@@ -1,10 +1,16 @@
 package Elfos;
 
-import java.util.Random;
+import java.util.Scanner;
 
 public class Arqueros implements jugarElfos{
-    private int vida01, fuerza01;
-    private Random rand = new Random(System.nanoTime());
+    private int vida01, ataque;
+    
+    public Arqueros(){}
+    
+    public Arqueros(int vida01, int fuerza01){
+        this.vida01 = vida01;
+        this.ataque = fuerza01;
+    }
 
     public int getVida01() {
         return vida01;
@@ -14,26 +20,42 @@ public class Arqueros implements jugarElfos{
         this.vida01 = vida01;
     }
 
-    public int getFuerza01() {
-        return fuerza01;
+    public int getataque() {
+        return ataque;
     }
 
-    public void setFuerza01(int fuerza01) {
-        this.fuerza01 = fuerza01;
-    }
-            
-    @Override
-    public void daño(){
-        System.out.println("Se creo el arquero");
+    public void setataque(int ataque) {
+        this.ataque = ataque;
     }
 
     @Override
     public void atacar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        int a = 3;
+        Scanner leer = new Scanner(System.in);
+        
+        System.out.println("Se entreno el Arquero, desea atacar? ");
+        while (a != 2){
+            System.out.println("1. Si");
+            System.out.println("2. No");
+            
+            a = leer.nextInt();
+            
+            switch(a){
+                case 1:
+                    Arqueros arquero = new Arqueros();
+                    arquero.setVida01(200);
+                    arquero.setataque(100);
+                    System.out.println("Arquero hizo un daño de: " + ataque + "al centro de mando Aliens: ");
+                    System.out.println("Vida del arquero: " + vida01);
+                    break;
+                case 2:
+                    System.out.println("Saliendo de este bloque...");
+                    break;
+            }
+        }
     }
 
     @Override
-    public void defender() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public void recolectar() {}
 }
