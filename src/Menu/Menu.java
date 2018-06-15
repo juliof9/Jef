@@ -106,9 +106,9 @@ public class Menu {
                                     
                                     switch(a){
                                         case 1:
-                                            System.out.println("Oro: ");
-                                            System.out.println("Elixir: ");
-                                            System.out.println("Elixir oscuro: ");
+                                            System.out.println("Oro: "+bancooro.getRecursos());
+                                            System.out.println("Elixir: "+(elixir.getRecursos1()-peloton.getCosto12()));
+                                            System.out.println("Elixir oscuro: "+oscuro.getRecursos2());
                                             AbstractFactory factory;
                                             
                                             factory = FactoryProducer.getFactory("jugarHumanos");
@@ -116,9 +116,9 @@ public class Menu {
                                             Peloton.atacar();
                                             break;
                                         case 2:
-                                            System.out.println("Oro: ");
-                                            System.out.println("Elixir: ");
-                                            System.out.println("Elixir oscuro: ");
+                                            System.out.println("Oro: "+bancooro.getRecursos());
+                                            System.out.println("Elixir: "+(elixir.getRecursos1()-franco.getCosto11()));
+                                            System.out.println("Elixir oscuro: "+oscuro.getRecursos2());
                                             AbstractFactory factor;
                                             
                                             factor = FactoryProducer.getFactory("jugarHumanos");
@@ -147,27 +147,27 @@ public class Menu {
                                     
                                     switch(b){
                                         case 1:
-                                            System.out.println("Oro: ");
-                                            System.out.println("Elixir: ");
-                                            System.out.println("Elixir oscuro: ");
+                                            System.out.println("Oro: "+(bancooro.getRecursos()-bancooro.getCosto8()));
+                                            System.out.println("Elixir: "+elixir.getRecursos1());
+                                            System.out.println("Elixir oscuro: "+oscuro.getRecursos2());
                                             AbstractFactory facto;
                                             facto = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos BancoOro = facto.getjugarHumanos("BancoOro");
                                             BancoOro.recolectar1();
                                             break;
                                         case 2:
-                                            System.out.println("Oro: ");
-                                            System.out.println("Elixir: ");
-                                            System.out.println("Elixir oscuro: ");
+                                            System.out.println("Oro: "+(bancooro.getRecursos()-elixir.getCosto9()));
+                                            System.out.println("Elixir: "+elixir.getRecursos1());
+                                            System.out.println("Elixir oscuro: "+oscuro.getRecursos2());
                                             AbstractFactory fact;
                                             fact = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Elixir = fact.getjugarHumanos("Elixir");
                                             Elixir.recolectar1();
                                             break;
                                         case 3:
-                                            System.out.println("Oro: ");
-                                            System.out.println("Elixir: ");
-                                            System.out.println("Elixir oscuro: ");
+                                            System.out.println("Oro: "+(bancooro.getRecursos()-oscuro.getCosto10()));
+                                            System.out.println("Elixir: "+elixir.getRecursos1());
+                                            System.out.println("Elixir oscuro: "+oscuro.getRecursos2());
                                             AbstractFactory fac;
                                             fac = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos ElixirOscuro = fac.getjugarHumanos("ElixirOscuro");
@@ -193,18 +193,18 @@ public class Menu {
                                     
                                     switch(c){
                                         case 1:
-                                            System.out.println("Oro: ");
-                                            System.out.println("Elixir: ");
-                                            System.out.println("Elixir oscuro: ");
+                                            System.out.println("Oro: "+bancooro.getRecursos());
+                                            System.out.println("Elixir: "+(elixir.getRecursos1()-avion.getCosto7()));
+                                            System.out.println("Elixir oscuro: "+oscuro.getRecursos2());
                                             AbstractFactory fa;
                                             fa = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Avion = fa.getjugarHumanos("Avion");
                                             Avion.atacar();
                                             break;
                                         case 2:
-                                            System.out.println("Oro: ");
-                                            System.out.println("Elixir: ");
-                                            System.out.println("Elixir oscuro: ");
+                                            System.out.println("Oro: "+bancooro.getRecursos());
+                                            System.out.println("Elixir: "+(elixir.getRecursos1()-tanque.getCosto13()));
+                                            System.out.println("Elixir oscuro: "+oscuro.getRecursos2());
                                             AbstractFactory f;
                                             f = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Tanque = f.getjugarHumanos("Tanque");
