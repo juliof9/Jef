@@ -19,9 +19,13 @@ import Elfos.Mago;
 import Elfos.MinaElixirE;
 import Elfos.MinaOroE;
 import Elfos.jugarElfos;
+import Humanos.Avion;
 import Humanos.BancoOro;
 import Humanos.Elixir;
 import Humanos.ElixirOscuro;
+import Humanos.Francotirador;
+import Humanos.Peloton;
+import Humanos.Tanque;
 import Humanos.jugarHumanos;
 
 public class Menu {
@@ -56,12 +60,23 @@ public class Menu {
                 case 1:
                     int valor = 5;
                     Scanner leer = new Scanner(System.in);
+                    Avion avion = new Avion();
+                    avion.setCosto7(700);
+                    Tanque tanque = new Tanque();
+                    tanque.setCosto13(800);
+                    Francotirador franco = new Francotirador();
+                    franco.setCosto11(800);
+                    Peloton peloton = new Peloton();
+                    peloton.setCosto12(500);
                     BancoOro bancooro = new BancoOro();
                     bancooro.setRecursos(10000);
+                    bancooro.setCosto8(900);
                     Elixir elixir = new Elixir();
                     elixir.setRecursos1(5000);
+                    elixir.setCosto9(550);
                     ElixirOscuro oscuro = new ElixirOscuro();
                     oscuro.setRecursos2(3000);
+                    oscuro.setCosto10(600);
                     System.out.println("Tus recursos son: ");
                     System.out.println("Oro: "+bancooro.getRecursos());
                     System.out.println("Elixir: "+elixir.getRecursos1());
