@@ -1,8 +1,12 @@
 package Menu;
 
+import Aliens.Aliens;
+import Aliens.Depredadores;
 import Aliens.ElixirOscuroA;
 import Aliens.MinaElixir;
 import Aliens.MinaOro;
+import Aliens.Naves;
+import Aliens.Omni;
 import Aliens.jugarAliens;
 import java.util.Scanner;
 import ClasesAbstractas.AbstractFactory;
@@ -208,12 +212,23 @@ public class Menu {
                 case 2:
                     int valor1 = 5;
                     Scanner teclas = new Scanner(System.in);
+                    Aliens alien = new Aliens();
+                    alien.setCosto00(800);
+                    Depredadores depredador = new Depredadores();
+                    depredador.setCosto01(900);
+                    Naves nave = new Naves();
+                    nave.setCosto02(1000);
+                    Omni omni = new Omni();
+                    omni.setCosto03(1500);
                     MinaOro oro = new MinaOro();
                     oro.setRecursos03(10000);
+                    oro.setCosto06(1000);
                     MinaElixir elixir1 = new MinaElixir();
                     elixir1.setRecursos02(5000);
+                    elixir1.setCosto05(1000);
                     ElixirOscuroA oscuro1 = new ElixirOscuroA();
                     oscuro1.setRecursos01(3000);
+                    oscuro1.setCosto04(1200);
                     System.out.println("Tus recursos son: ");
                     System.out.println("Oro: "+oro.getRecursos03());
                     System.out.println("Elixir: "+elixir1.getRecursos02());
@@ -235,20 +250,26 @@ public class Menu {
                                 
                                 while (d != 3){
                                     System.out.println("Sus milicias son las siguientes: \n");
-                                    System.out.println("1. Aliens");
-                                    System.out.println("2. Depredadores (Super soldado)");
+                                    System.out.println("1. Aliens costo: 800 elixir");
+                                    System.out.println("2. Depredadores (Super soldado) costo: 900 elixir");
                                     System.out.println("3. Salir \n");
                                     
                                     d = leer1.nextInt();
                                     
                                     switch(d){
                                         case 1:
+                                            System.out.println("Oro: "+oro.getRecursos03());
+                                            System.out.println("Elixir: "+(elixir1.getRecursos02()-alien.getCosto00()));
+                                            System.out.println("Elixir oscuro: "+oscuro1.getRecursos01());
                                             AbstractFactory factory1;
                                             factory1 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens Aliens = factory1.getjugarAliens("Aliens");
                                             Aliens.atacar();
                                             break;
                                         case 2:
+                                            System.out.println("Oro: "+oro.getRecursos03());
+                                            System.out.println("Elixir: "+(elixir1.getRecursos02()-depredador.getCosto01()));
+                                            System.out.println("Elixir oscuro: "+oscuro1.getRecursos01());
                                             AbstractFactory factory2;
                                             factory2 =FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens Depredadores = factory2.getjugarAliens("Depredadores");
@@ -267,28 +288,37 @@ public class Menu {
                                 Scanner leer3 = new Scanner(System.in);
                                 
                                 while(e != 4){
-                                    System.out.println("Que desea comenzar a contruir? \n");
-                                    System.out.println("1. Mina de Oro");
-                                    System.out.println("2. Mina de Elixir");
-                                    System.out.println("3. Mina de Elixir Oscuro");
+                                    System.out.println("Que desea comenzar a contruir?");
+                                    System.out.println("1. Mina de Oro costo: 1000 oro");
+                                    System.out.println("2. Mina de Elixir costo: 1000 oro");
+                                    System.out.println("3. Mina de Elixir Oscuro costo: 1200 oro");
                                     System.out.println("4. Salir \n");
                                     
                                     e = leer3.nextInt();
                                     
                                     switch(e){
                                         case 1:
+                                            System.out.println("Oro: "+(oro.getRecursos03()-oro.getCosto06()));
+                                            System.out.println("Elixir: "+elixir1.getRecursos02());
+                                            System.out.println("Elixir oscuro: "+oscuro1.getRecursos01());
                                             AbstractFactory factory3;
                                             factory3 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens MinaOro = factory3.getjugarAliens("MinaOro");
                                             MinaOro.recolectar();
                                             break;
                                         case 2:
+                                            System.out.println("Oro: "+(oro.getRecursos03()-elixir1.getCosto05()));
+                                            System.out.println("Elixir: "+elixir1.getRecursos02());
+                                            System.out.println("Elixir oscuro: "+oscuro1.getRecursos01());
                                             AbstractFactory factory4;
                                             factory4 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens MinaElixir = factory4.getjugarAliens("MinaElixir");
                                             MinaElixir.recolectar();
                                             break;
                                         case 3:
+                                            System.out.println("Oro: "+(oro.getRecursos03()-oscuro1.getCosto04()));
+                                            System.out.println("Elixir: "+elixir1.getRecursos02());
+                                            System.out.println("Elixir oscuro: "+oscuro1.getRecursos01());
                                             AbstractFactory factory5;
                                             factory5 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens ElixirOscuro = factory5.getjugarAliens("ElixirOscuro");
@@ -308,20 +338,26 @@ public class Menu {
                                 
                                 while( f != 3){
                                     System.out.println("Que vehiculos de guerra desea construir? \n");
-                                    System.out.println("1. Omnis");
-                                    System.out.println("2. Naves");
+                                    System.out.println("1. Omnis costo: 1500 elixir");
+                                    System.out.println("2. Naves costo: 1000 elixir");
                                     System.out.println("3. Salir \n");
                                     
                                     f = leer6.nextInt();
                                     
                                     switch(f){
                                         case 1:
+                                            System.out.println("Oro: "+oro.getRecursos03());
+                                            System.out.println("Elixir: "+(elixir1.getRecursos02()-omni.getCosto03()));
+                                            System.out.println("Elixir oscuro: "+oscuro1.getRecursos01());
                                             AbstractFactory factory6;
                                             factory6 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens Omni = factory6.getjugarAliens("Omni");
                                             Omni.atacar();
                                             break;
                                         case 2:
+                                            System.out.println("Oro: "+oro.getRecursos03());
+                                            System.out.println("Elixir: "+(elixir1.getRecursos02()-nave.getCosto02()));
+                                            System.out.println("Elixir oscuro: "+oscuro1.getRecursos01());
                                             AbstractFactory factory7;
                                             factory7 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens Naves = factory7.getjugarAliens("Naves");
