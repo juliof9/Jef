@@ -192,13 +192,13 @@ public class Menu {
                                             AbstractFactory factory1;
                                             factory1 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens Aliens = factory1.getjugarAliens("Aliens");
-                                            Aliens.daño();
+                                            Aliens.atacar();
                                             break;
                                         case 2:
                                             AbstractFactory factory2;
                                             factory2 =FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens Depredadores = factory2.getjugarAliens("Depredadores");
-                                            Depredadores.daño();
+                                            Depredadores.atacar();
                                             break;
                                         case 3:
                                             System.out.println("Saliendo");
@@ -226,19 +226,19 @@ public class Menu {
                                             AbstractFactory factory3;
                                             factory3 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens MinaOro = factory3.getjugarAliens("MinaOro");
-                                            MinaOro.daño();
+                                            MinaOro.recolectar();
                                             break;
                                         case 2:
                                             AbstractFactory factory4;
                                             factory4 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens MinaElixir = factory4.getjugarAliens("MinaElixir");
-                                            MinaElixir.daño();
+                                            MinaElixir.recolectar();
                                             break;
                                         case 3:
                                             AbstractFactory factory5;
                                             factory5 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens ElixirOscuro = factory5.getjugarAliens("ElixirOscuro");
-                                            ElixirOscuro.daño();
+                                            ElixirOscuro.recolectar();
                                             break;
                                         case 4:
                                             System.out.println("Saliendo de este bloque");
@@ -265,13 +265,13 @@ public class Menu {
                                             AbstractFactory factory6;
                                             factory6 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens Omni = factory6.getjugarAliens("Omni");
-                                            Omni.daño();
+                                            Omni.atacar();
                                             break;
                                         case 2:
                                             AbstractFactory factory7;
                                             factory7 = FactoryProducer.getFactory("jugarAliens");
                                             jugarAliens Naves = factory7.getjugarAliens("Naves");
-                                            Naves.daño();
+                                            Naves.atacar();
                                             break;
                                         case 3:
                                             System.out.println("Saliendo de este bloque");
