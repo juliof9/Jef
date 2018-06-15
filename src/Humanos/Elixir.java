@@ -23,8 +23,6 @@ public class Elixir implements jugarHumanos{
 
     @Override
     public void recolectar1() {
-        Elixir elixir = new Elixir();
-        elixir.setRecursos1(5000);
-        System.out.println("Tienes: "+ elixir.getRecursos1() + " de elixir");
+        System.out.println("Contruiste el recolector de elixir.");
     }
 }

@@ -23,8 +23,6 @@ public class ElixirOscuro implements jugarHumanos{
 
     @Override
     public void recolectar1() {
-        ElixirOscuro elixiroscuro = new ElixirOscuro();
-        elixiroscuro.setRecursos2(3000);
-        System.out.println("Tienes: "+ elixiroscuro.getRecursos2() + " de elixir oscuro");
+        System.out.println("Construiste tu recolector de Elixir oscuro");
     }
 }
