@@ -4,7 +4,7 @@ import static Humanos.CuartelHumanos.life1;
 import Menu.Menu;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
-
+//La contraseña es: juguemos
 public class Main {
     public static void main(String[] args){
         String Contraseña, jugador1, jugador2;
