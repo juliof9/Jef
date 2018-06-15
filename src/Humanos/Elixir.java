@@ -33,5 +33,9 @@ public class Elixir implements jugarHumanos{
     @Override
     public void recolectar1() {
         System.out.println("Contruiste el recolector de elixir.");
+        int a = 0;
+        while (a != 0){
+            recursos1 = recursos1+1;
+        }
     }
 }

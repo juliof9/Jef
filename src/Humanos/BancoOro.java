@@ -33,5 +33,9 @@ public class BancoOro implements jugarHumanos{
     @Override
     public void recolectar1() {
         System.out.println("Contruiste tu recolector de Oro");
+        int a = 0;
+        while (a != 0){
+            recursos = recursos+1;
+        }
     }
 }
