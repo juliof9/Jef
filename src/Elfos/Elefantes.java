@@ -13,12 +13,21 @@ import java.util.Scanner;
 
 public class Elefantes implements jugarElfos{
     public static int vida10 = 900;
-    private int fuerza10;
+    private int fuerza10, costo4;
+
+    public int getCosto4() {
+        return costo4;
+    }
+
+    public void setCosto4(int costo4) {
+        this.costo4 = costo4;
+    }
     
     public Elefantes(){}
     
-    public Elefantes(int fuerza10){
+    public Elefantes(int fuerza10, int costo4){
         this.fuerza10 = fuerza10;
+        this.costo4 = costo4;
     }
 
     public int getFuerza10() {

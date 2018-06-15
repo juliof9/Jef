@@ -13,12 +13,21 @@ import java.util.Scanner;
 
 public class Mago implements jugarElfos{
     public static int vida8 = 900;
-    private int fuerza8;
+    private int fuerza8, costo3;
     
     public Mago(){}
     
-    public Mago(int fuerza8){
+    public Mago(int fuerza8,int costo3){
         this.fuerza8 = fuerza8;
+        this.costo3 = costo3;
+    }
+
+    public int getCosto3() {
+        return costo3;
+    }
+
+    public void setCosto3(int costo3) {
+        this.costo3 = costo3;
     }
     
     public int getFuerza8() {

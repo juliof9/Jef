@@ -13,12 +13,21 @@ import java.util.Scanner;
 
 public class Arqueros implements jugarElfos{
     public static int vida01 = 900;
-    private int ataque;
+    private int ataque, costo6;
     
     public Arqueros(){}
     
-    public Arqueros(int fuerza01){
+    public Arqueros(int fuerza01, int costo6){
         this.ataque = fuerza01;
+        this.costo6 = costo6;
+    }
+
+    public int getCosto6() {
+        return costo6;
+    }
+
+    public void setCosto6(int costo6) {
+        this.costo6 = costo6;
     }
 
     public int getataque() {
