@@ -7,7 +7,11 @@ import Aliens.jugarAliens;
 import java.util.Scanner;
 import ClasesAbstractas.AbstractFactory;
 import ClasesAbstractas.FactoryProducer;
+import Elfos.Arqueros;
+import Elfos.Avionetas;
+import Elfos.Elefantes;
 import Elfos.ElixirOscuroE;
+import Elfos.Mago;
 import Elfos.MinaElixirE;
 import Elfos.MinaOroE;
 import Elfos.jugarElfos;
@@ -342,12 +346,23 @@ public class Menu {
                 case 3:
                     int valor2 = 5;
                     Scanner leer4 = new Scanner(System.in);
+                    Arqueros arquero = new Arqueros();
+                    arquero.setCosto6(1000);
+                    Mago mago = new Mago();
+                    mago.setCosto3(2000);
                     MinaOroE oro1 = new MinaOroE();
                     oro1.setRecolector(10000);
+                    oro1.setCosto1(2000);
                     MinaElixirE elixir2 = new MinaElixirE();
                     elixir2.setRecolector0(5000);
+                    elixir2.setCosto2(2000);
                     ElixirOscuroE oscuro2 = new ElixirOscuroE();
                     oscuro2.setrecolector1(3000);
+                    oscuro2.setCosto0(2500);
+                    Avionetas avioneta = new Avionetas();
+                    avioneta.setCosto5(1000);
+                    Elefantes elefante = new Elefantes();
+                    elefante.setCosto4(900);
                     
                     System.out.println("Tus recursos son: ");
                     System.out.println("Oro: "+oro1.getRecolector());
@@ -371,19 +386,25 @@ public class Menu {
                                 while(g != 3){
                                     System.out.println("Que desea entrenar jefe? ");
                                     System.out.println("1. Arquero cuesta 1000 elixir");
-                                    System.out.println("2. Mago que es un Super soldado cuesta 2500 elixir oscuro");
+                                    System.out.println("2. Mago que es un Super soldado cuesta 2000 elixir oscuro");
                                     System.out.println("3. Salir \n");
                                     
                                     g = leer5.nextInt();
                                     
                                     switch(g){
                                         case 1:
+                                            System.out.println("Oro: "+oro1.getRecolector());
+                                            System.out.println("Elixir: "+(elixir2.getRecolector0()-arquero.getCosto6()));
+                                            System.out.println("Elixir oscuro: "+oscuro2.getrecolector1());
                                             AbstractFactory factory7;
                                             factory7 = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos Arqueros = factory7.getjugarElfos("Arquero");
                                             Arqueros.atacar();
                                             break;
                                         case 2:
+                                            System.out.println("Oro: "+oro1.getRecolector());
+                                            System.out.println("Elixir: "+elixir2.getRecolector0());
+                                            System.out.println("Elixir oscuro: "+(oscuro2.getrecolector1()-mago.getCosto3()));
                                             AbstractFactory factory9;
                                             factory9 = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos Mago = factory9.getjugarElfos("Mago");
@@ -403,27 +424,36 @@ public class Menu {
                                 
                                 while (h != 4){
                                     System.out.println("Usted eligio crear una edificacion: ");
-                                    System.out.println("1. Mina de Oro 2000 oro");
-                                    System.out.println("2. Mina de Elixir");
-                                    System.out.println("3. Mina de Elixir Oscuro");
+                                    System.out.println("1. Mina de Oro costo: 2000 oro");
+                                    System.out.println("2. Mina de Elixir costo: 2000 oro");
+                                    System.out.println("3. Mina de Elixir Oscuro costo 2500 oro");
                                     System.out.println("4. Salir \n");
                                     
                                     h = leer7.nextInt();
                                     
                                     switch(h){
                                         case 1:
+                                            System.out.println("Oro: "+(oro1.getRecolector()-oro1.getCosto1()));
+                                            System.out.println("Elixir: "+elixir2.getRecolector0());
+                                            System.out.println("Elixir oscuro: "+oscuro2.getrecolector1());
                                             AbstractFactory factory0;
                                             factory0 = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos MinaOro = factory0.getjugarElfos("MinaOro");
                                             MinaOro.recolectar();
                                             break;
                                         case 2:
+                                            System.out.println("Oro: "+(oro1.getRecolector()-elixir2.getCosto2()));
+                                            System.out.println("Elixir: "+elixir2.getRecolector0());
+                                            System.out.println("Elixir oscuro: "+oscuro2.getrecolector1());
                                             AbstractFactory factory;
                                             factory = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos MinaElixir = factory.getjugarElfos("MinaElixir");
                                             MinaElixir.recolectar();
                                             break;
                                         case 3:
+                                            System.out.println("Oro: "+(oro1.getRecolector()-oscuro2.getCosto0()));
+                                            System.out.println("Elixir: "+elixir2.getRecolector0());
+                                            System.out.println("Elixir oscuro: "+oscuro2.getrecolector1());
                                             AbstractFactory factory1;
                                             factory1 = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos ElixirOscuro = factory1.getjugarElfos("ElixirOscuro");
@@ -443,20 +473,26 @@ public class Menu {
                                 
                                 while(i != 3){
                                     System.out.println("Que vehiculo de guerra desea contruir? \n");
-                                    System.out.println("1. Avionetas");
-                                    System.out.println("2. Elefantes");
+                                    System.out.println("1. Avionetas costo: 1000 elixir");
+                                    System.out.println("2. Elefantes costo: 900 elixir");
                                     System.out.println("3. Salir \n");
                                     
                                     i = leer0.nextInt();
                                     
                                     switch(i){
                                         case 1:
+                                            System.out.println("Oro: "+oro1.getRecolector());
+                                            System.out.println("Elixir: "+(elixir2.getRecolector0()-avioneta.getCosto5()));
+                                            System.out.println("Elixir oscuro: "+oscuro2.getrecolector1());
                                             AbstractFactory factory;
                                             factory = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos Avionetas = factory.getjugarElfos("Avionetas");
                                             Avionetas.atacar();
                                             break;
                                         case 2:
+                                            System.out.println("Oro: "+oro1.getRecolector());
+                                            System.out.println("Elixir: "+(elixir2.getRecolector0()-elefante.getCosto4()));
+                                            System.out.println("Elixir oscuro: "+oscuro2.getrecolector1());
                                             AbstractFactory factor;
                                             factor = FactoryProducer.getFactory("jugarElfos");
                                             jugarElfos Elefantes = factor.getjugarElfos("Elefantes");
