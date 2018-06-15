@@ -1,5 +1,6 @@
 package Humanos;
 
+import static Aliens.CentroAliens.life3;
 import static Elfos.Arqueros.vida01;
 import static Elfos.Avionetas.vida11;
 import static Elfos.CentroElfos.life;
@@ -42,19 +43,20 @@ public class Tanque implements jugarHumanos{
             a = lee5.nextInt();
             switch(a){
                 case 1:
-                    int b = 10;
+                    int b = 11;
                     Scanner lee = new Scanner(System.in);
                     System.out.println("A quien deseas atacar?");
-                    while( b != 9){
+                    while( b != 10){
                         System.out.println("1. Arqueros");
                         System.out.println("2. Avionetas");
-                        System.out.println("3. CentroElfos");
-                        System.out.println("4. Elefantes");
-                        System.out.println("5. Elixir Oscuro");
-                        System.out.println("6. Mago");
-                        System.out.println("7. Mina de Elixir");
-                        System.out.println("8. Mina de Oro");
-                        System.out.println("9. Salir");
+                        System.out.println("3. Centro de mando Elfos");
+                        System.out.println("4. Centro de mando Aliens");
+                        System.out.println("5. Elefantes");
+                        System.out.println("6. Elixir Oscuro");
+                        System.out.println("7. Mago");
+                        System.out.println("8. Mina de Elixir");
+                        System.out.println("9. Mina de Oro");
+                        System.out.println("10. Salir");
                         b = lee.nextInt();
                         switch(b){
                             case 1:
@@ -67,21 +69,24 @@ public class Tanque implements jugarHumanos{
                                 System.out.println("Tanque ataco con: "+tanque.getFuerza()+" a Centro Elfos: "+(life-tanque.getFuerza()));
                                 break;
                             case 4:
-                                System.out.println("Tanque ataco con: "+tanque.getFuerza()+" a Elefante: "+(vida10-tanque.getFuerza()));
+                                System.out.println("Tanque ataco con: "+tanque.getFuerza()+" a Centro Aliens: "+(life3-tanque.getFuerza()));
                                 break;
                             case 5:
-                                System.out.println("Tanque ataco a: "+tanque.getFuerza()+" a Mina de Elixir Oscuro: "+(vida9-tanque.getFuerza()));
+                                System.out.println("Tanque ataco con: "+tanque.getFuerza()+" a Elefante: "+(vida10-tanque.getFuerza()));
                                 break;
                             case 6:
-                                System.out.println("Tanque ataco a: "+tanque.getFuerza()+" a Mago: "+(vida8-tanque.getFuerza()));
+                                System.out.println("Tanque ataco a: "+tanque.getFuerza()+" a Mina de Elixir Oscuro: "+(vida9-tanque.getFuerza()));
                                 break;
                             case 7:
-                                System.out.println("Tanque ataco a: "+tanque.getFuerza()+" a Mina de Elixir: "+(vida09-tanque.getFuerza()));
+                                System.out.println("Tanque ataco a: "+tanque.getFuerza()+" a Mago: "+(vida8-tanque.getFuerza()));
                                 break;
                             case 8:
-                                System.out.println("Tanque ataco a: "+tanque.getFuerza()+" a Mina de Oro: "+(vida0-tanque.getFuerza()));
+                                System.out.println("Tanque ataco a: "+tanque.getFuerza()+" a Mina de Elixir: "+(vida09-tanque.getFuerza()));
                                 break;
                             case 9:
+                                System.out.println("Tanque ataco a: "+tanque.getFuerza()+" a Mina de Oro: "+(vida0-tanque.getFuerza()));
+                                break;
+                            case 10:
                                 System.out.println("Saliendo de este bloque");
                                 break;
                             default:

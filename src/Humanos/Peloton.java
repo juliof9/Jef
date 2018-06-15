@@ -1,5 +1,6 @@
 package Humanos;
 
+import static Aliens.CentroAliens.life3;
 import static Elfos.Arqueros.vida01;
 import static Elfos.Avionetas.vida11;
 import static Elfos.CentroElfos.life;
@@ -36,19 +37,20 @@ public class Peloton implements jugarHumanos{
             a = lee4.nextInt();
             switch(a){
                 case 1:
-                    int b = 10;
+                    int b = 11;
                     Scanner lee = new Scanner(System.in);
                     System.out.println("A quien deseas atacar?");
-                    while( b != 9){
+                    while( b != 10){
                         System.out.println("1. Arqueros");
                         System.out.println("2. Avionetas");
-                        System.out.println("3. CentroElfos");
-                        System.out.println("4. Elefantes");
-                        System.out.println("5. Elixir Oscuro");
-                        System.out.println("6. Mago");
-                        System.out.println("7. Mina de Elixir");
-                        System.out.println("8. Mina de Oro");
-                        System.out.println("9. Salir");
+                        System.out.println("3. Centro de mando de Elfos");
+                        System.out.println("4. Centro de mando de Aliens");
+                        System.out.println("5. Elefantes");
+                        System.out.println("6. Elixir Oscuro");
+                        System.out.println("7. Mago");
+                        System.out.println("8. Mina de Elixir");
+                        System.out.println("9. Mina de Oro");
+                        System.out.println("10. Salir");
                         b = lee.nextInt();
                         switch(b){
                             case 1:
@@ -61,21 +63,24 @@ public class Peloton implements jugarHumanos{
                                 System.out.println("Peloton ataco con: "+peloton.getFuerza2()+" a Centro Elfos: "+(life-peloton.getFuerza2()));
                                 break;
                             case 4:
-                                System.out.println("Peloton ataco con: "+peloton.getFuerza2()+" a Elefante: "+(vida10-peloton.getFuerza2()));
+                                System.out.println("Peloton ataco con: "+peloton.getFuerza2()+" a Centro Aliens: "+(life3-peloton.getFuerza2()));
                                 break;
                             case 5:
-                                System.out.println("Peloton ataco a: "+peloton.getFuerza2()+" a Mina de Elixir Oscuro: "+(vida9-peloton.getFuerza2()));
+                                System.out.println("Peloton ataco con: "+peloton.getFuerza2()+" a Elefante: "+(vida10-peloton.getFuerza2()));
                                 break;
                             case 6:
-                                System.out.println("Peloton ataco a: "+peloton.getFuerza2()+" a Mago: "+(vida8-peloton.getFuerza2()));
+                                System.out.println("Peloton ataco a: "+peloton.getFuerza2()+" a Mina de Elixir Oscuro: "+(vida9-peloton.getFuerza2()));
                                 break;
                             case 7:
-                                System.out.println("Peloton ataco a: "+peloton.getFuerza2()+" a Mina de Elixir: "+(vida09-peloton.getFuerza2()));
+                                System.out.println("Peloton ataco a: "+peloton.getFuerza2()+" a Mago: "+(vida8-peloton.getFuerza2()));
                                 break;
                             case 8:
-                                System.out.println("Peloton ataco a: "+peloton.getFuerza2()+" a Mina de Oro: "+(vida0-peloton.getFuerza2()));
+                                System.out.println("Peloton ataco a: "+peloton.getFuerza2()+" a Mina de Elixir: "+(vida09-peloton.getFuerza2()));
                                 break;
                             case 9:
+                                System.out.println("Peloton ataco a: "+peloton.getFuerza2()+" a Mina de Oro: "+(vida0-peloton.getFuerza2()));
+                                break;
+                            case 10:
                                 System.out.println("Saliendo de este bloque");
                                 break;
                             default:
