@@ -1,16 +1,15 @@
 package Aliens;
 
 public class MinaOro implements jugarAliens{
-    private int vida05, recursos03;
-
-    public int getVida05() {
-        return vida05;
+    public static int vida05 = 500;
+    private int recursos03;
+    
+    public MinaOro(){}
+    
+    public MinaOro(int recursos03){
+        this.recursos03 = recursos03;
     }
-
-    public void setVida05(int vida05) {
-        this.vida05 = vida05;
-    }
-
+    
     public int getRecursos03() {
         return recursos03;
     }
@@ -20,17 +19,10 @@ public class MinaOro implements jugarAliens{
     }
     
     @Override
-    public void daño(){
-        System.out.println("Espere dos turnos para que se cree la mina de oro");
-    }
+    public void atacar() {}
 
     @Override
-    public void atacar() {
-        
-    }
-
-    @Override
-    public void defender() {
+    public void recolectar() {
         
     }
 }

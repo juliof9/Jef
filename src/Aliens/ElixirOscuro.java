@@ -1,14 +1,13 @@
 package Aliens;
 
 public class ElixirOscuro implements jugarAliens{
-    private int vida03, recursos01;
-
-    public int getVida03() {
-        return vida03;
-    }
-
-    public void setVida03(int vida03) {
-        this.vida03 = vida03;
+    public static int vida03 = 500;
+    private int recursos01;
+    
+    public ElixirOscuro(){}
+    
+    public ElixirOscuro(int recursos01){
+        this.recursos01 = recursos01;
     }
 
     public int getRecursos01() {
@@ -18,19 +17,12 @@ public class ElixirOscuro implements jugarAliens{
     public void setRecursos01(int recursos01) {
         this.recursos01 = recursos01;
     }
-    
-    @Override
-    public void daño(){
-        System.out.println("Se creo la edificacion");
-    }
 
     @Override
-    public void atacar() {
-        
-    }
+    public void atacar() {}
 
     @Override
-    public void defender() {
+    public void recolectar() {
         
     }
 }
