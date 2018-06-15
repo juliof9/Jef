@@ -27,7 +27,7 @@ public class Main {
         Scanner leer2 = new Scanner(System.in);
         System.out.println("Ingrese su nombre jugador2: ");
         jugador2 = leer2.nextLine();
-        System.out.println(jugador2 + " Wordl");
+        System.out.println(jugador2 + " World");
         
         do{
             Math.random();
@@ -46,6 +46,12 @@ public class Main {
             }    
         }while(life > 0 && life1 > 0 && life2 > 0); 
         
+        if(life == 0){
+            System.out.println("Gano: "+ jugador1);
+        }
         
+        if(life1 == 0){
+            System.out.println("Gano: "+ jugador2);
+        }
     }
 }

@@ -1,10 +1,19 @@
 package Menu;
 
+import Aliens.ElixirOscuroA;
+import Aliens.MinaElixir;
+import Aliens.MinaOro;
 import Aliens.jugarAliens;
 import java.util.Scanner;
 import ClasesAbstractas.AbstractFactory;
 import ClasesAbstractas.FactoryProducer;
+import Elfos.ElixirOscuroE;
+import Elfos.MinaElixirE;
+import Elfos.MinaOroE;
 import Elfos.jugarElfos;
+import Humanos.BancoOro;
+import Humanos.Elixir;
+import Humanos.ElixirOscuro;
 import Humanos.jugarHumanos;
 
 public class Menu {
@@ -28,9 +37,9 @@ public class Menu {
         
         while (op != 4){
             System.out.println("Bienvenido al juego... Que raza deseas elegir? \n");
-            System.out.println("1. Humanos");
-            System.out.println("2. Aliens");
-            System.out.println("3. Elfos");
+            System.out.println("1. Humanos (ventaja: todo es de bajo costo desventaja: no hacen tanto daño las milicias)");
+            System.out.println("2. Aliens (ventaja: hacen mas daño las milicias desventaja: poseen poca vida)");
+            System.out.println("3. Elfos (ventaja: tiene mas vida todo desventaja: tiene un mayor costo de creacion)");
             System.out.println("4. Salir \n");
             
             op = teclado.nextInt();
@@ -39,6 +48,16 @@ public class Menu {
                 case 1:
                     int valor = 5;
                     Scanner leer = new Scanner(System.in);
+                    BancoOro bancooro = new BancoOro();
+                    bancooro.setRecursos(10000);
+                    Elixir elixir = new Elixir();
+                    elixir.setRecursos1(5000);
+                    ElixirOscuro oscuro = new ElixirOscuro();
+                    oscuro.setRecursos2(3000);
+                    System.out.println("Tus recursos son: ");
+                    System.out.println("Oro: "+bancooro.getRecursos());
+                    System.out.println("Elixir: "+elixir.getRecursos1());
+                    System.out.println("Elixir Oscuro: "+oscuro.getRecursos2());
                     
                     while (valor != 4){
                         System.out.println("En que desea gastar sus recursos de la raza humanos? ");
@@ -55,15 +74,18 @@ public class Menu {
                                 Scanner lee = new Scanner(System.in);
                                 
                                 while (a != 3){
-                                    System.out.println("Que soldado desea entrenar? \n");
-                                    System.out.println("1. Peloton");
-                                    System.out.println("2. Super Soldado (Francotirador)");
+                                    System.out.println("Que soldado desea entrenar?");
+                                    System.out.println("1. Peloton costo: 500 de Elixir");
+                                    System.out.println("2. Super Soldado, Francotirador costo: 800 de Elixir oscuro");
                                     System.out.println("3. Salir \n");
                                     
                                     a = lee.nextInt();
                                     
                                     switch(a){
                                         case 1:
+                                            System.out.println("Oro: ");
+                                            System.out.println("Elixir: ");
+                                            System.out.println("Elixir oscuro: ");
                                             AbstractFactory factory;
                                             
                                             factory = FactoryProducer.getFactory("jugarHumanos");
@@ -71,6 +93,9 @@ public class Menu {
                                             Peloton.atacar();
                                             break;
                                         case 2:
+                                            System.out.println("Oro: ");
+                                            System.out.println("Elixir: ");
+                                            System.out.println("Elixir oscuro: ");
                                             AbstractFactory factor;
                                             
                                             factor = FactoryProducer.getFactory("jugarHumanos");
@@ -78,7 +103,7 @@ public class Menu {
                                             Francotirador.atacar();
                                             break;
                                         case 3:
-                                            System.out.println("Adios, saliendo del sistema");
+                                            System.out.println("Adios, saliendo de este bloque");
                                             break;
                                         default:
                                             System.out.println("Usten ingreso" + a + "Por favor ingrese una opcion valida");
@@ -89,28 +114,37 @@ public class Menu {
                                 int b = 5;
                                 Scanner lectura = new Scanner(System.in);
                                 while (b != 4){
-                                    System.out.println("Cual edificacion desea construir? \n");
-                                    System.out.println("1. Mina o Banco de Oro");
-                                    System.out.println("2. Mina de Elixir");
-                                    System.out.println("3. Mina Elixir Oscuro");
+                                    System.out.println("Cual edificacion desea construir?");
+                                    System.out.println("1. Banco de Oro costo: 900 de Oro");
+                                    System.out.println("2. Mina de Elixir costo: 550 de Oro");
+                                    System.out.println("3. Mina Elixir Oscuro costo: 600 de Oro");
                                     System.out.println("4. Salir \n");
                                     
                                     b = lectura.nextInt();
                                     
                                     switch(b){
                                         case 1:
+                                            System.out.println("Oro: ");
+                                            System.out.println("Elixir: ");
+                                            System.out.println("Elixir oscuro: ");
                                             AbstractFactory facto;
                                             facto = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos BancoOro = facto.getjugarHumanos("BancoOro");
                                             BancoOro.recolectar1();
                                             break;
                                         case 2:
+                                            System.out.println("Oro: ");
+                                            System.out.println("Elixir: ");
+                                            System.out.println("Elixir oscuro: ");
                                             AbstractFactory fact;
                                             fact = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Elixir = fact.getjugarHumanos("Elixir");
                                             Elixir.recolectar1();
                                             break;
                                         case 3:
+                                            System.out.println("Oro: ");
+                                            System.out.println("Elixir: ");
+                                            System.out.println("Elixir oscuro: ");
                                             AbstractFactory fac;
                                             fac = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos ElixirOscuro = fac.getjugarHumanos("ElixirOscuro");
@@ -128,20 +162,26 @@ public class Menu {
                                 Scanner tecla = new Scanner(System.in);
                                 while (c != 3){
                                     System.out.println("Que vehiculo desea contruir? \n");
-                                    System.out.println("1. Avion");
-                                    System.out.println("2. Tanque");
+                                    System.out.println("1. Avion costo: 700 de elixir");
+                                    System.out.println("2. Tanque costo: 800 de elixir");
                                     System.out.println("3. Salir \n");
                                     
                                     c = tecla.nextInt();
                                     
                                     switch(c){
                                         case 1:
+                                            System.out.println("Oro: ");
+                                            System.out.println("Elixir: ");
+                                            System.out.println("Elixir oscuro: ");
                                             AbstractFactory fa;
                                             fa = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Avion = fa.getjugarHumanos("Avion");
                                             Avion.atacar();
                                             break;
                                         case 2:
+                                            System.out.println("Oro: ");
+                                            System.out.println("Elixir: ");
+                                            System.out.println("Elixir oscuro: ");
                                             AbstractFactory f;
                                             f = FactoryProducer.getFactory("jugarHumanos");
                                             jugarHumanos Tanque = f.getjugarHumanos("Tanque");
@@ -164,6 +204,16 @@ public class Menu {
                 case 2:
                     int valor1 = 5;
                     Scanner teclas = new Scanner(System.in);
+                    MinaOro oro = new MinaOro();
+                    oro.setRecursos03(10000);
+                    MinaElixir elixir1 = new MinaElixir();
+                    elixir1.setRecursos02(5000);
+                    ElixirOscuroA oscuro1 = new ElixirOscuroA();
+                    oscuro1.setRecursos01(3000);
+                    System.out.println("Tus recursos son: ");
+                    System.out.println("Oro: "+oro.getRecursos03());
+                    System.out.println("Elixir: "+elixir1.getRecursos02());
+                    System.out.println("Elixir Oscuro: "+oscuro1.getRecursos01());
                     
                     while (valor1 != 4){
                         System.out.println("Se escogio la raza Aliens, que desea hacer? ");
@@ -292,6 +342,17 @@ public class Menu {
                 case 3:
                     int valor2 = 5;
                     Scanner leer4 = new Scanner(System.in);
+                    MinaOroE oro1 = new MinaOroE();
+                    oro1.setRecolector(10000);
+                    MinaElixirE elixir2 = new MinaElixirE();
+                    elixir2.setRecolector0(5000);
+                    ElixirOscuroE oscuro2 = new ElixirOscuroE();
+                    oscuro2.setrecolector1(3000);
+                    
+                    System.out.println("Tus recursos son: ");
+                    System.out.println("Oro: "+oro1.getRecolector());
+                    System.out.println("Elixir: "+elixir2.getRecolector0());
+                    System.out.println("Elixir Oscuro: "+oscuro2.getrecolector1());
                     
                     while( valor2 != 4){
                         System.out.println("Se escogio la raza Elfos ");
@@ -308,9 +369,9 @@ public class Menu {
                                 Scanner leer5 = new Scanner(System.in);
                                 
                                 while(g != 3){
-                                    System.out.println("Que desea hacer jefe? ");
-                                    System.out.println("1. Entrenar un arquero");
-                                    System.out.println("2. Entrenar un mago (Super soldado)");
+                                    System.out.println("Que desea entrenar jefe? ");
+                                    System.out.println("1. Arquero cuesta 1000 elixir");
+                                    System.out.println("2. Mago que es un Super soldado cuesta 2500 elixir oscuro");
                                     System.out.println("3. Salir \n");
                                     
                                     g = leer5.nextInt();
@@ -342,7 +403,7 @@ public class Menu {
                                 
                                 while (h != 4){
                                     System.out.println("Usted eligio crear una edificacion: ");
-                                    System.out.println("1. Mina de Oro");
+                                    System.out.println("1. Mina de Oro 2000 oro");
                                     System.out.println("2. Mina de Elixir");
                                     System.out.println("3. Mina de Elixir Oscuro");
                                     System.out.println("4. Salir \n");
