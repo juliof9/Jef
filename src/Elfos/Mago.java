@@ -12,7 +12,7 @@ import static Humanos.CuartelHumanos.life1;
 import java.util.Scanner;
 
 public class Mago implements jugarElfos{
-    public static int vida8 = 600;
+    public static int vida8 = 900;
     private int fuerza8;
     
     public Mago(){}
@@ -32,7 +32,7 @@ public class Mago implements jugarElfos{
     @Override
     public void atacar() {
         Mago mago = new Mago();
-        mago.setFuerza8(500);
+        mago.setFuerza8(600);
         int a = 3;
         Scanner lee4 = new Scanner(System.in);
         System.out.println("Se creo el Mago, deseas atacar? ");

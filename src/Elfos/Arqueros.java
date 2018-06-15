@@ -12,7 +12,7 @@ import static Humanos.CuartelHumanos.life1;
 import java.util.Scanner;
 
 public class Arqueros implements jugarElfos{
-    public static int vida01 = 400;
+    public static int vida01 = 900;
     private int ataque;
     
     public Arqueros(){}
@@ -32,7 +32,7 @@ public class Arqueros implements jugarElfos{
     @Override
     public void atacar() {
         Arqueros arquero = new Arqueros();
-        arquero.setataque(100);
+        arquero.setataque(300);
         int a =3;
         Scanner lee4 = new Scanner(System.in);
         System.out.println("Se creo el Arquero, deseas atacar? ");

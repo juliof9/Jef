@@ -13,7 +13,7 @@ import static Humanos.CuartelHumanos.life1;
 import java.util.Scanner;
 
 public class Avionetas implements jugarElfos{
-    public static int vida11 = 500;
+    public static int vida11 = 900;
     private int fuerza11;
     
     public Avionetas(){}
@@ -33,7 +33,7 @@ public class Avionetas implements jugarElfos{
     @Override
     public void atacar() {
         Avionetas avioneta = new Avionetas();
-        avioneta.setFuerza11(200);
+        avioneta.setFuerza11(400);
         Scanner lee4 = new Scanner(System.in);
         System.out.println("Se creo la Avioneta, deseas atacar? ");
         int a = 3;

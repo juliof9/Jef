@@ -12,7 +12,7 @@ import static Humanos.CuartelHumanos.life1;
 import java.util.Scanner;
 
 public class Elefantes implements jugarElfos{
-    public static int vida10 = 200;
+    public static int vida10 = 900;
     private int fuerza10;
     
     public Elefantes(){}
@@ -32,7 +32,7 @@ public class Elefantes implements jugarElfos{
     @Override
     public void atacar() {
         Elefantes elefante = new Elefantes();
-        elefante.setFuerza10(300);
+        elefante.setFuerza10(500);
         int a = 3;
         Scanner lee4 = new Scanner(System.in);
         System.out.println("Se creo el elefante, deseas atacar? ");
