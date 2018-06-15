@@ -13,12 +13,21 @@ import java.util.Scanner;
 
 public class Tanque implements jugarHumanos{
     public static int vida = 600;
-    private int fuerza;
+    private int fuerza, costo13;
     
     public Tanque(){}
     
-    public Tanque(int fuerza){
+    public Tanque(int fuerza, int costo13){
         this.fuerza = fuerza;
+        this.costo13 = costo13;
+    }
+
+    public int getCosto13() {
+        return costo13;
+    }
+
+    public void setCosto13(int costo13) {
+        this.costo13 = costo13;
     }
 
     public int getFuerza() {
