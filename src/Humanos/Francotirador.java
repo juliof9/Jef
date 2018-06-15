@@ -13,12 +13,21 @@ import java.util.Scanner;
 
 public class Francotirador implements jugarHumanos{
     public static int vida4 = 500;
-    private int fuerza4;
+    private int fuerza4, costo11;
     
     public Francotirador(){}
     
-    public Francotirador(int fuerza4){
+    public Francotirador(int fuerza4, int costo11){
         this.fuerza4 = fuerza4;
+        this.costo11 = costo11;
+    }
+
+    public int getCosto11() {
+        return costo11;
+    }
+
+    public void setCosto11(int costo11) {
+        this.costo11 = costo11;
     }
 
     public int getFuerza4() {

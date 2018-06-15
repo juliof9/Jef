@@ -13,12 +13,21 @@ import java.util.Scanner;
 
 public class Avion implements jugarHumanos{
     public static int vida3 = 400;
-    private int fuerza3;
+    private int fuerza3, costo7;
     
     public Avion(){}
     
-    public Avion(int fuerza3){
+    public Avion(int fuerza3, int costo7){
         this.fuerza3 = fuerza3;
+        this.costo7 = costo7;
+    }
+
+    public int getCosto7() {
+        return costo7;
+    }
+
+    public void setCosto7(int costo7) {
+        this.costo7 = costo7;
     }
 
     public int getFuerza3() {

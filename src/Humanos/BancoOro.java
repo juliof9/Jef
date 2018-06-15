@@ -2,12 +2,21 @@ package Humanos;
 
 public class BancoOro implements jugarHumanos{
     public static int vida1 = 300;
-    private int recursos;
+    private int recursos, costo8;
     
     public BancoOro(){}
     
-    public BancoOro(int recursos){
+    public BancoOro(int recursos, int costo8){
         this.recursos = recursos;
+        this.costo8 = costo8;
+    }
+
+    public int getCosto8() {
+        return costo8;
+    }
+
+    public void setCosto8(int costo8) {
+        this.costo8 = costo8;
     }
 
     public int getRecursos() {

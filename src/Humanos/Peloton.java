@@ -13,14 +13,23 @@ import java.util.Scanner;
 
 public class Peloton implements jugarHumanos{
     public static int vida2 = 600;
-    private int fuerza2;
+    private int fuerza2, costo12;
 
     public int getFuerza2() {
         return fuerza2;
     }
 
-    public void setFuerza2(int fuerza2) {
+    public void setFuerza2(int fuerza2, int costo12) {
         this.fuerza2 = fuerza2;
+        this.costo12 = costo12;
+    }
+
+    public int getCosto12() {
+        return costo12;
+    }
+
+    public void setCosto12(int costo12) {
+        this.costo12 = costo12;
     }
 
     @Override
