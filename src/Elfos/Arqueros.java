@@ -1,5 +1,14 @@
 package Elfos;
 
+import static Aliens.Aliens.vida02;
+import static Aliens.CuartelAliens.life2;
+import static Aliens.Depredadores.vida00;
+import static Aliens.ElixirOscuro.vida03;
+import static Aliens.MinaElixir.vida04;
+import static Aliens.MinaOro.vida05;
+import static Aliens.Naves.vida06;
+import static Aliens.Omni.vida12;
+import static Humanos.CuartelHumanos.life1;
 import java.util.Scanner;
 
 public class Arqueros implements jugarElfos{
@@ -10,14 +19,6 @@ public class Arqueros implements jugarElfos{
     
     public Arqueros(int fuerza01){
         this.ataque = fuerza01;
-    }
-
-    public int getVida01() {
-        return vida01;
-    }
-
-    public void setVida01(int vida01) {
-        this.vida01 = vida01;
     }
 
     public int getataque() {
@@ -32,23 +33,72 @@ public class Arqueros implements jugarElfos{
     public void atacar() {
         Arqueros arquero = new Arqueros();
         arquero.setataque(100);
-        int a = 3;
-        Scanner leer = new Scanner(System.in);
-        
-        System.out.println("Se entreno el Arquero, desea atacar? ");
-        while (a != 2 ){
+        int a =3;
+        Scanner lee4 = new Scanner(System.in);
+        System.out.println("Se creo el Arquero, deseas atacar? ");
+        while (a != 2){
             System.out.println("1. Si");
             System.out.println("2. No");
             
-            a = leer.nextInt();
-            
+            a = lee4.nextInt();
             switch(a){
                 case 1:
-                    System.out.println("Arquero hizo un daño de: " + arquero.ataque + " al centro de mando Humanos: ");
+                    int b = 11;
+                    Scanner lee = new Scanner(System.in);
+                    while( b != 10){
+                        System.out.println("A quien deseas atacar?");
+                        System.out.println("1. Peloton");
+                        System.out.println("2. Francotirador");
+                        System.out.println("3. CentroHumanos");
+                        System.out.println("4. CentroElfos");
+                        System.out.println("5. Tanque");
+                        System.out.println("6. Elixir Oscuro");
+                        System.out.println("7. Avion");
+                        System.out.println("8. Mina de Elixir");
+                        System.out.println("9. Banco de Oro");
+                        System.out.println("10. Salir");
+                        b = lee.nextInt();
+                        switch(b){
+                            case 1:
+                                System.out.println("Arquero ataco con: "+arquero.getataque()+" a Aliens: " +(vida02-arquero.getataque()));
+                                break;
+                            case 2:
+                                System.out.println("Arquero ataco con: "+arquero.getataque()+" a depredador: " +(vida00-arquero.getataque()));
+                                break;
+                            case 3:
+                                System.out.println("Arquero ataco con: "+arquero.getataque()+" a Centro Humanos: "+(life1-arquero.getataque()));
+                                break;
+                            case 4:
+                                System.out.println("Arquero ataco con: "+arquero.getataque()+" a Centro Aliens: "+(life2-arquero.getataque()));
+                                break;
+                            case 5:
+                                System.out.println("Arquero ataco con: "+arquero.getataque()+" a Naves: "+(vida06-arquero.getataque()));
+                                break;
+                            case 6:
+                                System.out.println("Arquero ataco a: "+arquero.getataque()+" a Mina de Elixir Oscuro: "+(vida03-arquero.getataque()));
+                                break;
+                            case 7:
+                                System.out.println("Arquero ataco a: "+arquero.getataque()+" a Omni: "+(vida12-arquero.getataque()));
+                                break;
+                            case 8:
+                                System.out.println("Arquero ataco a: "+arquero.getataque()+" a Mina de Elixir: "+(vida04-arquero.getataque()));
+                                break;
+                            case 9:
+                                System.out.println("Arquero ataco a: "+arquero.getataque()+" a Mina de Oro: "+(vida05-arquero.getataque()));
+                                break;
+                            case 10:
+                                System.out.println("Saliendo de este bloque");
+                                break;
+                            default:
+                                System.out.println("Ingreso: "+ b +" Por favor ingrese una opcion valida");
+                        }
+                    }
                     break;
                 case 2:
-                    System.out.println("Saliendo de este bloque...");
+                    System.out.println("Saliendo de este bloque");
                     break;
+                default:
+                    System.out.println("Ingreso: "+ a +" ingrese una opcion valida");
             }
         }
     }
