@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 
 public class Naves implements jugarAliens{
-    public static int vida06 = 900;
+    public static int vida06 = 500;
     private int fuerza11;
     
     public Naves(){}
@@ -33,7 +33,7 @@ public class Naves implements jugarAliens{
     @Override
     public void atacar() {
         Naves nave = new Naves();
-        nave.setFuerza11(400);
+        nave.setFuerza11(600);
         int a =3;
         Scanner lee4 = new Scanner(System.in);
         System.out.println("Se creo la nave, deseas atacar? ");

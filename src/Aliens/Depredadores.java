@@ -12,7 +12,7 @@ import static Humanos.Tanque.vida;
 import java.util.Scanner;
 
 public class Depredadores implements jugarAliens{
-    public static int vida00 = 600;
+    public static int vida00 = 500;
     
     private int fuerza00;
     
@@ -33,7 +33,7 @@ public class Depredadores implements jugarAliens{
     @Override
     public void atacar() {
         Depredadores depredador = new Depredadores();
-        depredador.setFuerza00(600);
+        depredador.setFuerza00(700);
         int a =3;
         Scanner lee4 = new Scanner(System.in);
         System.out.println("Se creo el depredador, deseas atacar? ");

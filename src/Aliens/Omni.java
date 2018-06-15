@@ -12,7 +12,7 @@ import static Humanos.Tanque.vida;
 import java.util.Scanner;
 
 public class Omni implements jugarAliens{
-    public static int vida12 = 700;
+    public static int vida12 = 500;
     private int fuerza12;
     
     public Omni(){}
@@ -32,7 +32,7 @@ public class Omni implements jugarAliens{
     @Override
     public void atacar() {
         Omni omni = new Omni();
-        omni.setFuerza12(250);
+        omni.setFuerza12(650);
         int a =3;
         Scanner lee4 = new Scanner(System.in);
         System.out.println("Se creo el Omni, deseas atacar? ");

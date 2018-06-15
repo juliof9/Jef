@@ -32,7 +32,7 @@ public class Aliens implements jugarAliens{
     @Override
     public void atacar() {
         Aliens aliens = new Aliens();
-        aliens.setFuerza02(400);
+        aliens.setFuerza02(450);
         int a =3;
         Scanner lee4 = new Scanner(System.in);
         System.out.println("Se creo el Alien, deseas atacar? ");
