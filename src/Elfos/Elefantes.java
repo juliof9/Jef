@@ -44,8 +44,9 @@ public class Elefantes implements jugarElfos{
         elefante.setFuerza10(500);
         int a = 3;
         Scanner lee4 = new Scanner(System.in);
-        System.out.println("Se creo el elefante, deseas atacar? ");
+        
         while (a != 2){
+            System.out.println("Se creo el elefante, deseas atacar? ");
             System.out.println("1. Si");
             System.out.println("2. No");
             

@@ -44,9 +44,10 @@ public class Avionetas implements jugarElfos{
         Avionetas avioneta = new Avionetas();
         avioneta.setFuerza11(400);
         Scanner lee4 = new Scanner(System.in);
-        System.out.println("Se creo la Avioneta, deseas atacar? ");
+        
         int a = 3;
         while (a != 2){
+            System.out.println("Se creo la Avioneta, deseas atacar? ");
             System.out.println("1. Si");
             System.out.println("2. No");
             

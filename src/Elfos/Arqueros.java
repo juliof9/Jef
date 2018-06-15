@@ -44,8 +44,9 @@ public class Arqueros implements jugarElfos{
         arquero.setataque(300);
         int a =3;
         Scanner lee4 = new Scanner(System.in);
-        System.out.println("Se creo el Arquero, deseas atacar? ");
+        
         while (a != 2){
+            System.out.println("Se creo el Arquero, deseas atacar? ");
             System.out.println("1. Si");
             System.out.println("2. No");
             

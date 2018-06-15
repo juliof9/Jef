@@ -44,8 +44,9 @@ public class Mago implements jugarElfos{
         mago.setFuerza8(600);
         int a = 3;
         Scanner lee4 = new Scanner(System.in);
-        System.out.println("Se creo el Mago, deseas atacar? ");
+        
         while (a != 2){
+            System.out.println("Se creo el Mago, deseas atacar? ");
             System.out.println("1. Si");
             System.out.println("2. No");
             
