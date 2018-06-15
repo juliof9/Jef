@@ -32,7 +32,7 @@ public class Francotirador implements jugarHumanos{
     @Override
     public void atacar() {
         Francotirador francotirador = new Francotirador();
-        francotirador.setFuerza4(500);
+        francotirador.setFuerza4(300);
         int a = 3;
         Scanner lee5 = new Scanner(System.in);
         System.out.println("Se creo el peloton, deseas atacar? ");

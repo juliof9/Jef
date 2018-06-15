@@ -26,7 +26,7 @@ public class Peloton implements jugarHumanos{
     @Override
     public void atacar() {
         Peloton peloton = new Peloton();
-        peloton.setFuerza2(100);
+        peloton.setFuerza2(200);
         int a =3;
         Scanner lee4 = new Scanner(System.in);
         System.out.println("Se creo el peloton, deseas atacar? ");

@@ -32,7 +32,7 @@ public class Avion implements jugarHumanos{
     @Override
     public void atacar() {
         Avion avion = new Avion();
-        avion.setFuerza3(400);
+        avion.setFuerza3(200);
         int a =3;
         Scanner lee2 = new Scanner(System.in);
         System.out.println("Se creo el avion, deseas atacar? ");
