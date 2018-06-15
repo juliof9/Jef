@@ -19,15 +19,15 @@ public class CuartelElfos implements AbstractFactory{
             case "Mago":
                 return new Mago();
             case "MinaOro":
-                return new MinaOro();
+                return new MinaOroE();
             case "MinaElixir":
-                return new MinaElixir();
+                return new MinaElixirE();
             case "Elefantes":
                 return new Elefantes();
             case "Avionetas":
                 return new Avionetas();
             case "ElixirOscuro":
-                return new ElixirOscuro();
+                return new ElixirOscuroE();
         }
         return null;
     }

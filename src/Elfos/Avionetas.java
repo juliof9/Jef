@@ -4,7 +4,7 @@ package Elfos;
 import static Aliens.Aliens.vida02;
 import static Aliens.CuartelAliens.life2;
 import static Aliens.Depredadores.vida00;
-import static Aliens.ElixirOscuro.vida03;
+import static Aliens.ElixirOscuroA.vida03;
 import static Aliens.MinaElixir.vida04;
 import static Aliens.MinaOro.vida05;
 import static Aliens.Naves.vida06;
