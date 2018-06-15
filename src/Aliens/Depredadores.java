@@ -14,12 +14,21 @@ import java.util.Scanner;
 public class Depredadores implements jugarAliens{
     public static int vida00 = 500;
     
-    private int fuerza00;
+    private int fuerza00, costo01;
     
     public Depredadores(){}
     
-    public Depredadores(int fuerza00){
+    public Depredadores(int fuerza00, int costo01){
         this.fuerza00 = fuerza00;
+        this.costo01 = costo01;
+    }
+
+    public int getCosto01() {
+        return costo01;
+    }
+
+    public void setCosto01(int costo01) {
+        this.costo01 = costo01;
     }
     
     public int getFuerza00() {

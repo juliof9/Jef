@@ -13,12 +13,21 @@ import java.util.Scanner;
 
 public class Omni implements jugarAliens{
     public static int vida12 = 500;
-    private int fuerza12;
+    private int fuerza12, costo03;
     
     public Omni(){}
     
-    public Omni(int fuerza12){
+    public Omni(int fuerza12, int costo03){
         this.fuerza12 = fuerza12;
+        this.costo03 = costo03;
+    }
+
+    public int getCosto03() {
+        return costo03;
+    }
+
+    public void setCosto03(int costo03) {
+        this.costo03 = costo03;
     }
 
     public int getFuerza12() {

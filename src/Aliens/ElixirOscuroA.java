@@ -2,12 +2,21 @@ package Aliens;
 
 public class ElixirOscuroA implements jugarAliens{
     public static int vida03 = 500;
-    private int recursos01;
+    private int recursos01, costo04;
     
     public ElixirOscuroA(){}
     
-    public ElixirOscuroA(int recursos01){
+    public ElixirOscuroA(int recursos01, int costo04){
         this.recursos01 = recursos01;
+        this.costo04 = costo04;
+    }
+
+    public int getCosto04() {
+        return costo04;
+    }
+
+    public void setCosto04(int costo04) {
+        this.costo04 = costo04;
     }
 
     public int getRecursos01() {
@@ -23,6 +32,9 @@ public class ElixirOscuroA implements jugarAliens{
 
     @Override
     public void recolectar() {
-        
+        int a = 0;
+        while (a != 0){
+            recursos01 = recursos01+1;
+        }
     }
 }

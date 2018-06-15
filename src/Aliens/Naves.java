@@ -14,12 +14,21 @@ import java.util.Scanner;
 
 public class Naves implements jugarAliens{
     public static int vida06 = 500;
-    private int fuerza11;
+    private int fuerza11, costo02;
     
     public Naves(){}
     
-    public Naves(int fuerza11){
+    public Naves(int fuerza11, int costo02){
         this.fuerza11 = fuerza11;
+        this.costo02 = costo02;
+    }
+
+    public int getCosto02() {
+        return costo02;
+    }
+
+    public void setCosto02(int costo02) {
+        this.costo02 = costo02;
     }
 
     public int getFuerza11() {
