@@ -5,10 +5,10 @@ import static Elfos.Arqueros.vida01;
 import static Elfos.Avionetas.vida11;
 import static Elfos.CuartelElfos.life;
 import static Elfos.Elefantes.vida10;
-import static Elfos.ElixirOscuro.vida9;
+import static Elfos.ElixirOscuroE.vida9;
 import static Elfos.Mago.vida8;
-import static Elfos.MinaElixir.vida09;
-import static Elfos.MinaOro.vida0;
+import static Elfos.MinaElixirE.vida09;
+import static Elfos.MinaOroE.vida0;
 import java.util.Scanner;
 
 public class Peloton implements jugarHumanos{
