@@ -1,9 +1,9 @@
 package Aliens;
 
-import static Elfos.CentroElfos.life;
+import static Elfos.CuartelElfos.life;
 import static Humanos.Avion.vida3;
 import static Humanos.BancoOro.vida1;
-import static Humanos.CentroHumanos.life1;
+import static Humanos.CuartelHumanos.life1;
 import static Humanos.Elixir.vida6;
 import static Humanos.ElixirOscuro.vida5;
 import static Humanos.Francotirador.vida4;

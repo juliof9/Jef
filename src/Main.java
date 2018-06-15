@@ -1,5 +1,6 @@
-import static Elfos.CentroElfos.life;
-import static Humanos.CentroHumanos.life1;
+import static Aliens.CuartelAliens.life2;
+import static Elfos.CuartelElfos.life;
+import static Humanos.CuartelHumanos.life1;
 import Menu.Menu;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
@@ -43,6 +44,8 @@ public class Main {
         
                 menu.opciones();
             }    
-        }while(life >= 0 && life1 >= 0); 
+        }while(life > 0 && life1 > 0 && life2 > 0); 
+        
+        
     }
 }

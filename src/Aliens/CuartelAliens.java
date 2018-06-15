@@ -5,6 +5,7 @@ import Elfos.jugarElfos;
 import Humanos.jugarHumanos;
 
 public class CuartelAliens implements AbstractFactory{
+    public static int life2 = 1000;
     @Override
     public jugarAliens getjugarAliens(String type){
         switch(type){
