@@ -1,9 +1,9 @@
 package Humanos;
 
-import static Aliens.CentroAliens.life3;
+import static Aliens.CuartelAliens.life2;
 import static Elfos.Arqueros.vida01;
 import static Elfos.Avionetas.vida11;
-import static Elfos.CentroElfos.life;
+import static Elfos.CuartelElfos.life;
 import static Elfos.Elefantes.vida10;
 import static Elfos.ElixirOscuro.vida9;
 import static Elfos.Mago.vida8;
@@ -45,8 +45,8 @@ public class Tanque implements jugarHumanos{
                 case 1:
                     int b = 11;
                     Scanner lee = new Scanner(System.in);
-                    System.out.println("A quien deseas atacar?");
                     while( b != 10){
+                        System.out.println("A quien deseas atacar?");
                         System.out.println("1. Arqueros");
                         System.out.println("2. Avionetas");
                         System.out.println("3. Centro de mando Elfos");
@@ -69,7 +69,7 @@ public class Tanque implements jugarHumanos{
                                 System.out.println("Tanque ataco con: "+tanque.getFuerza()+" a Centro Elfos: "+(life-tanque.getFuerza()));
                                 break;
                             case 4:
-                                System.out.println("Tanque ataco con: "+tanque.getFuerza()+" a Centro Aliens: "+(life3-tanque.getFuerza()));
+                                System.out.println("Tanque ataco con: "+tanque.getFuerza()+" a Centro Aliens: "+(life2-tanque.getFuerza()));
                                 break;
                             case 5:
                                 System.out.println("Tanque ataco con: "+tanque.getFuerza()+" a Elefante: "+(vida10-tanque.getFuerza()));

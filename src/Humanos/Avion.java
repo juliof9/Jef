@@ -1,9 +1,9 @@
 package Humanos;
 
-import static Aliens.CentroAliens.life3;
+import static Aliens.CuartelAliens.life2;
 import static Elfos.Arqueros.vida01;
 import static Elfos.Avionetas.vida11;
-import static Elfos.CentroElfos.life;
+import static Elfos.CuartelElfos.life;
 import static Elfos.Elefantes.vida10;
 import static Elfos.ElixirOscuro.vida9;
 import static Elfos.Mago.vida8;
@@ -69,7 +69,7 @@ public class Avion implements jugarHumanos{
                                 System.out.println("Avion ataco con: "+avion.getFuerza3()+" a Centro Elfos: "+(life-avion.getFuerza3()));
                                 break;
                             case 4:
-                                System.out.println("Avion ataco con: "+avion.getFuerza3()+" a Centro Aliens: "+(life3-avion.getFuerza3()));
+                                System.out.println("Avion ataco con: "+avion.getFuerza3()+" a Centro Aliens: "+(life2-avion.getFuerza3()));
                                 break;
                             case 5:
                                 System.out.println("Avion ataco con: "+avion.getFuerza3()+" a Elefante: "+(vida10-avion.getFuerza3()));

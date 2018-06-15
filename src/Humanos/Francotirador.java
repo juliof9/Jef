@@ -1,9 +1,9 @@
 package Humanos;
 
-import static Aliens.CentroAliens.life3;
+import static Aliens.CuartelAliens.life2;
 import static Elfos.Arqueros.vida01;
 import static Elfos.Avionetas.vida11;
-import static Elfos.CentroElfos.life;
+import static Elfos.CuartelElfos.life;
 import static Elfos.Elefantes.vida10;
 import static Elfos.ElixirOscuro.vida9;
 import static Elfos.Mago.vida8;
@@ -69,7 +69,7 @@ public class Francotirador implements jugarHumanos{
                                 System.out.println("Francotirador ataco con: "+francotirador.getFuerza4()+" a Centro Elfos: "+(life-francotirador.getFuerza4()));
                                 break;
                             case 4:
-                                System.out.println("Francotirador ataco con: "+francotirador.getFuerza4()+" a Centro Aiens: "+(life3-francotirador.getFuerza4()));
+                                System.out.println("Francotirador ataco con: "+francotirador.getFuerza4()+" a Centro Aiens: "+(life2-francotirador.getFuerza4()));
                                 break;
                             case 5:
                                 System.out.println("Francotirador ataco con: "+francotirador.getFuerza4()+" a Elefante: "+(vida10-francotirador.getFuerza4()));

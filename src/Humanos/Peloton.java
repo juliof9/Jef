@@ -1,9 +1,9 @@
 package Humanos;
 
-import static Aliens.CentroAliens.life3;
+import static Aliens.CuartelAliens.life2;
 import static Elfos.Arqueros.vida01;
 import static Elfos.Avionetas.vida11;
-import static Elfos.CentroElfos.life;
+import static Elfos.CuartelElfos.life;
 import static Elfos.Elefantes.vida10;
 import static Elfos.ElixirOscuro.vida9;
 import static Elfos.Mago.vida8;
@@ -63,7 +63,7 @@ public class Peloton implements jugarHumanos{
                                 System.out.println("Peloton ataco con: "+peloton.getFuerza2()+" a Centro Elfos: "+(life-peloton.getFuerza2()));
                                 break;
                             case 4:
-                                System.out.println("Peloton ataco con: "+peloton.getFuerza2()+" a Centro Aliens: "+(life3-peloton.getFuerza2()));
+                                System.out.println("Peloton ataco con: "+peloton.getFuerza2()+" a Centro Aliens: "+(life2-peloton.getFuerza2()));
                                 break;
                             case 5:
                                 System.out.println("Peloton ataco con: "+peloton.getFuerza2()+" a Elefante: "+(vida10-peloton.getFuerza2()));

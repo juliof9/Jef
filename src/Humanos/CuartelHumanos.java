@@ -5,7 +5,7 @@ import ClasesAbstractas.AbstractFactory;
 import Elfos.jugarElfos;
 
 public class CuartelHumanos implements AbstractFactory{
-    
+    public static int life1 = 1000;
     @Override
     public jugarElfos getjugarElfos(String type){
         return null;
