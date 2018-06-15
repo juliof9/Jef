@@ -34,6 +34,9 @@ public class MinaOroE implements jugarElfos{
 
     @Override
     public void recolectar() {
-        
+        int a = 0;
+        while (a != 0){
+            recolector = recolector+1;
+        }
     }
 }

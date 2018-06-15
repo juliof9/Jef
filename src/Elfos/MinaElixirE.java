@@ -35,6 +35,9 @@ public class MinaElixirE implements jugarElfos{
 
     @Override
     public void recolectar() {
-        
+        int a = 0;
+        while (a != 0){
+            recolector0 = recolector0+1;
+        }
     }
 }
