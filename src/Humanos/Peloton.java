@@ -44,8 +44,8 @@ public class Peloton implements jugarHumanos{
         peloton.setFuerza2(200);
         int a =3;
         Scanner lee4 = new Scanner(System.in);
-        System.out.println("Se creo el peloton, deseas atacar? ");
         while (a != 2){
+            System.out.println("Se creo el peloton, deseas atacar? ");
             System.out.println("1. Si");
             System.out.println("2. No");
             

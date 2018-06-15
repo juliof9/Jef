@@ -44,8 +44,8 @@ public class Francotirador implements jugarHumanos{
         francotirador.setFuerza4(300);
         int a = 3;
         Scanner lee5 = new Scanner(System.in);
-        System.out.println("Se creo el peloton, deseas atacar? ");
         while (a != 2){
+            System.out.println("Se creo el peloton, deseas atacar? ");
             System.out.println("1. Si");
             System.out.println("2. No");
             

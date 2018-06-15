@@ -44,8 +44,8 @@ public class Avion implements jugarHumanos{
         avion.setFuerza3(200);
         int a =3;
         Scanner lee2 = new Scanner(System.in);
-        System.out.println("Se creo el avion, deseas atacar? ");
         while (a != 2){
+            System.out.println("Se creo el avion, deseas atacar? ");
             System.out.println("1. Si");
             System.out.println("2. No");
             
